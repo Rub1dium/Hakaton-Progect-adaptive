@@ -54,13 +54,13 @@ header {
 }
 
 .Menu .Logo img {
-    width: 58px;
+    width: 56px;
     overflow: hiden;
 }
 
 .Menu .Logo span {
     color: #333;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
     overflow: hiden;
 }
