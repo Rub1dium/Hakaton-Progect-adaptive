@@ -46,7 +46,7 @@ header {
 
     transform: translateX(35px);
 
-    overflow: hiden;
+    overflow: hidden;
 
     display: flex;
     justify-content: space-between;
@@ -55,14 +55,14 @@ header {
 
 .Menu .Logo img {
     width: 56px;
-    overflow: hiden;
+    overflow: hidden;
 }
 
 .Menu .Logo span {
     color: #333;
     font-size: 22px;
     font-weight: 500;
-    overflow: hiden;
+    overflow: hidden;
 }
 
 /* Стили ссылок гл. меню */
