@@ -1,0 +1,32 @@
+/* Стили гл. контейнера для плавающего мусора */
+.Trash {
+    width:100%;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    pointer-events: none;
+}
+
+/* Стили мусора */
+.Trash .obj-trash {
+    width: 300px;
+    animation: TrashAnim 7s 0 linear;
+}
+
+.Trash .obj-trash {
+    transition: .3s ease;
+    opacity: 0;
+
+    transform: translateY(-25rem);
+}
+
+/* Анимация мусора  */
+@keyframes TrashAnim {
+    0% { transform: translateY(-25rem) rotate(0deg); }
+    100% { transform: translateY(75rem) rotate(45deg);}
+}

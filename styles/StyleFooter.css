@@ -1,0 +1,108 @@
+/* Стили гл. контейнера */
+footer {
+    width: 100vw;
+    height: 75vh;
+    background: linear-gradient(180deg, #f5eacb, 70%, #c7bda2);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Стиль перехода */
+footer .sand-transition img {
+    background-color: #000;
+}
+
+/* Стили гл. контейнера для текста */
+footer .Text {
+    width: 1200px;
+    height: 600px;
+
+    transform: translateY(-50px);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Стили текса */
+footer .Text .Logo {
+    font-weight: 700;
+    font-size: 60px;
+    color: #333;
+}
+
+footer .Text .By {
+    font-weight: 500;
+    color: #4d4d80;
+}
+
+/* Стили ссылок */
+footer .Text .Links {
+    font-size: 26px;
+
+    margin-top: 70px;
+
+    display: flex;
+    gap: 40px;
+}
+
+footer .Text a, footer .Text span {
+    font-size: 18px;
+    color: #212121;
+    text-decoration: none;
+
+    transition: .2s ease;
+}
+
+footer .Links .footerLink:hover {
+    color: #ff805d;
+}
+
+footer .Links .href-1 {
+    font-weight: 600;
+}
+
+/* Стили выпадающего меню */
+footer .Links .href-3 div {
+    background-color: transparent;
+    padding: 20px 0px;
+
+    position: absolute;
+
+    display: none;
+}
+
+footer .Links .href-3:hover div {
+    display: block;
+}
+
+
+footer .Links .href-3 div aside {
+    background-color: #fff;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+footer .Links .href-3 div aside:first-of-type {
+    border-top: 1px solid;
+}
+
+footer .Links .href-3 div aside:last-of-type {
+    border-bottom: 1px solid;
+}
+
+footer .Links .href-3 div img {
+    width: 32px;
+    margin-right: 10px;
+}
+
+footer .Links .href-3 div p {
+    color: #212121;
+}

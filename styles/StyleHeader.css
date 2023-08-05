@@ -1,0 +1,257 @@
+/* Общие стили */
+* {
+    font-family: "Montserrat";
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Стили для шапки */
+header {
+    width: 100vw;
+    height: 1000px;
+
+    background: linear-gradient(180deg, #9be4ff, 60%, #fff5d4); 
+
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Стили гл. меню */
+.Menu {
+    width: 70vw;
+    height: 5vh;
+
+    position: static;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Стили лого */
+.Menu .Logo {
+    width: 225px;
+    height: 5vh;
+
+    transform: translateX(35px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Menu .Logo img {
+    width: 58px;
+}
+
+.Menu .Logo span {
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Стили ссылок гл. меню */
+.Menu .Links nav {
+    width: 350px;
+    height: 5vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Menu .Links a,
+.Menu .Links .href-1
+.Menu .Links .href-2
+.Menu .Links .href-3
+.Menu .Links .href-4 {
+    font-size: 18px;
+    color: #212121;
+
+    transition: .2s ease;
+}
+
+.Menu .Links .headerLink:hover{
+    color: #ff805d;
+}
+
+.Menu .Links .href-1 {
+    font-weight: 600;
+}
+
+/* Стили выпадающего меню */
+.Menu .Links .href-3 div {
+    background-color: transparent;
+    padding: 20px 0px;
+
+    position: absolute;
+
+    display: none;
+}
+
+.Menu .Links .href-3:hover div {
+    display: block;
+}
+
+
+.Menu .Links .href-3 div aside {
+    background-color: #fff;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 20px;
+
+    align-items: center;
+    display: flex;
+}
+
+.Menu .Links .href-3 div aside:first-of-type {
+    border-top: 1px solid;
+}
+
+.Menu .Links .href-3 div aside:last-of-type {
+    border-bottom: 1px solid;
+}
+
+.Menu .Links .href-3 div img {
+    width: 32px;
+    margin-right: 10px;
+}
+
+.Menu .Links .href-3 div p {
+    color: #212121;
+}
+
+/* Стили гл. контейнера для текста */
+.Text {
+    height: auto;
+    width: auto;
+
+    transform: translateY(4rem);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили гл. текста */
+#TDS {
+    position: relative;
+
+    font-size: 96px;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #2c2c54;
+
+    will-change: transform;
+
+    transition: .3s ease;
+}
+
+.Text:hover #TDS {
+    transform: translateY(-20px);
+}
+
+/* Стили для волн */
+.Wave {
+    width: 100%;
+    height: 300px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.obj-waves {
+    width: 6800px;
+    height: 300px;
+    position: absolute;
+
+    will-change: transform;
+}
+
+.Wave-Gray {
+    background: url("../img/waveGray.png") repeat-x;
+    animation: WaveGray 17s linear;
+    animation-iteration-count: infinite;
+    opacity: .6;
+}
+
+.Wave-Blue {
+    background: url("../img/waveBlue.png") repeat-x;
+    animation: WaveBlue 10s linear;
+    animation-iteration-count: infinite;
+    opacity: .5;
+}
+
+.Wave-WhiteOP {
+    background: url("../img/waveWO.png") repeat-x;
+    animation: WaveWhiteOP 12s linear;
+    animation-iteration-count: infinite;
+    opacity: .7;
+}
+
+.Wave-White {
+    background: url("../img/waveWhite.png") repeat-x;
+    animation: WaveWhite 15s linear;
+    animation-iteration-count: infinite;
+    opacity: .9;
+}
+
+/* Анимация волн */
+@keyframes WaveGray {
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(-3400px); }
+}
+
+@keyframes WaveBlue {
+    0% { transform: translate(0px); }
+    100% { transform: translateX(-3400px); }
+}
+
+@keyframes WaveWhiteOP {
+    0% { transform: translate(0px); }
+    100% { transform: translateX(-3400px); }
+}
+
+@keyframes WaveWhite {
+    0% { transform: translate(0px); }
+    100% { transform: translateX(-3400px); }
+}
+
+/* Стили пузырей от волн */
+.Wave-Bubls {
+    width: 6800px;
+    height: 400px;
+    background: url("../img/waveBubls2.png") repeat-x;
+
+    position: absolute;
+    top: 50rem;
+    left: -230rem;
+
+    will-change: transform;
+
+    opacity: 1;
+    z-index: 1;
+    animation: Wave-Bubls 10s alternate;
+    animation-iteration-count: infinite;
+}
+
+/* Стили анимации пузырей от волн */
+@keyframes Wave-Bubls {
+    0% { transform: translate(-150px); }
+    100% { transform: translate(150px); }
+}
+
+/* Переход между header и main */
+.Gradient {
+    width: 100vw;
+    height: 200px;
+    background: linear-gradient(180deg, #fff, #3091cd);
+}

@@ -1,0 +1,336 @@
+/* Стили для изменения полосы прокрутки */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: linear-gradient(180deg, #30c9cd, #1353ba);
+}
+
+/* Стили для индикатора глубины */
+.Indicator {
+    width: auto;
+    height: 60px;
+
+    border-bottom: 1px dashed #ffffff67;
+
+    opacity: 0;
+    z-index: 1;
+
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: .5s ease;
+}
+
+.Indicator-Show {
+    opacity: 1;
+    
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 46.5rem;
+}
+
+.Content {
+    width: 100vw;
+    height: 76800px;
+    background: url("../img/gradient.png") no-repeat;
+    background-color: #000000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* Стили для секции */
+section {
+    width: 1600px;
+    height: 14500px;
+    position: absolute;
+
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+
+    display: flex;
+}
+
+
+
+/* Стили для расположения секций с блоками */
+#section1 { margin-top: 14500px; }
+#section2 { margin-top: 29000px; }
+#section3 { margin-top: 43500px; }
+#section4 { margin-top: 58000px; }
+#section5 { 
+    height: 4050px;
+    margin-top: 72500px;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Отключение настроек "по умолчанию"  */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Отступ для гл. текста блоков */
+section div span:first-of-type {
+    transform: translateY(10px);
+}
+
+
+
+/* Описание существ */
+#description {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+
+    transform: translateY(-130px);
+    opacity: 0;
+
+    color: #2c2c54;
+
+    transition: .5s ease;
+}
+
+.con:hover #description {
+    margin-top: 1rem;
+
+    transform: translateY(0);
+    z-index: 2;
+    opacity: 1;
+}
+
+
+
+/* Стили текста "СУМЕРЕЧНАЯ ЗОНА" */
+.TTZ {
+    position: absolute;
+    top: 251rem;
+    left: 33.8rem;
+
+    font-size: 50px;
+    font-weight: bold;
+    color: #eac7fa;
+}
+
+
+
+/* Стили текста "ПОЛУНОЧНАЯ ЗОНА" */
+.TMZ { 
+    position: absolute;
+    top: 348rem;
+    left: 33.4rem;
+
+    font-size: 50px;
+    font-weight: bold;
+    color: #eac7fa;
+}
+
+.Sunlight {
+    position: absolute;
+    top: 365rem;
+    left: 37.5rem;
+
+    font-weight: 500;
+    color: #fff;
+}
+
+
+
+/* Стили контейнеров */
+.con1, .con2, .con3, .con4, .con5,
+.con6, .con7, .con8, .con9, .con10,
+.con11, .con12, .con13, .con14, .con15,
+.con16, .con17, .con18, .con19, .con20,
+.con21, .con22, .con23, .con24, .con25,
+.con26, .con27, .con28, .con29, .con30,
+.con31, .con32, .con33, .con34, .con35,
+.con36, .con37, .con38, .con39, .con40,
+.con41, .con42, .con43, .con44, .con45,
+.con46, .con47, .con48, .con49, .con50,
+.con51, .con52, .con53, .con54, .con55,
+.con56, .con57, .con58, .con59, .con60,
+.con61, .EasterEgg, .con62 {
+    width: 250px;
+    height: auto;
+
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: .5s ease;
+}
+
+.objCon-show { opacity: 1; } /* Стиль для появления контейнеров */
+
+
+
+/* Стили для расположения контейнеров */
+.con1  { left: 10rem; }
+.con2  { left: 60rem; }
+.con3  { top: 15rem;  left: 35rem; }
+.con4  { top: 15rem;  left: 80rem; }
+.con5  { top: 35rem;  left: 10rem; }
+.con6  { top: 35rem;  left: 60rem; }
+.con7  { top: 47rem;  left: 35rem; }
+.con8  { top: 45rem;  left: 80rem; }
+.con9  { top: 56rem;  left: 10rem; }
+
+.con10 { top: 56rem;  left: 60rem; width: 300px; }
+.con11 { top: 77rem;  left: 20rem; }
+.con12 { top: 97rem;  left: 60rem; width: 300px; }
+.con13 { top: 127rem; left: 37rem; width: 400px; }
+.con14 { top: 150rem; left: 10rem; width: 350px; }
+.con15 { top: 155rem; left: 65rem; width: 350px; }
+.con16 { top: 170rem; left: 20rem; }
+.con17 { top: 190rem; left: 60rem; width: 320px; }
+.con18 { top: 205rem; left: 10rem; width: 550px; }
+.con19 { top: 230rem; left: 60rem; }
+.con20 { top: 235rem; left: 25rem; width: 350px; }
+
+.con21 { top: 265rem; left: 20rem; width: 300px; }
+.con22 { top: 280rem; left: 60rem; width: 350px; }
+.con23 { top: 295rem; left: 25rem; width: 300px; }
+.con24 { top: 325rem; left: 60rem; width: 350px; }
+.con25 { top: 335rem; left: 30rem; width: 450px; }
+.con26 { top: 398rem; left: 35rem; width: 400px; }
+
+.con27 { top: 420rem; left: 20rem; width: 1000px;}
+.con27 #diver { margin-top: 20px; }
+
+.con27 span:first-child {
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.con27 #description {
+    display: flex;
+    gap: 15px;
+}
+
+.con28 { top: 475rem; left: 41rem; }
+.con29 { top: 575rem; left: 41rem; }
+.con30 { top: 627rem; left: 35rem; width: 500px; }
+
+.con31 { top: 685rem; left: 37rem; width: 400px; }
+.con32 { top: 800rem; left: 38rem; width: 350px; }
+.con33 { top: 875rem; left: 37rem; width: 400px; }
+.con34 { top: 0rem;   left: 60rem; width: 300px; }
+.con35 { top: 47rem;  left: 10rem; width: 400px; }
+.con36 { top: 100rem; left: 45rem; width: 350px; }
+.con37 { top: 130rem; left: 15rem; width: 400px; }
+.con38 { top: 240rem; left: 36rem; width: 500px; }
+.con39 { top: 280rem; left: 15rem; width: 450px; }
+.con40 { top: 315rem; left: 35rem; width: 450px; }
+
+.con41 { top: 395rem; left: 15rem; width: 350px; }
+.con42 { top: 455rem; left: 30rem; width: 350px; }
+.con43 { top: 545rem; left: 50rem; width: 400px; }
+.con44 { top: 595rem; left: 30rem; width: 520px; }
+.con45 { top: 702rem; left: 60rem; width: 450px; }
+.con46 { top: 805rem; left: 40rem; width: 400px; }
+.con47 { top: 30rem;  left: 15rem; width: 400px; }
+.con48 { top: 130rem; left: 25rem; width: 400px; }
+.con49 { top: 345rem; left: 30rem; width: 400px; }
+.con50 { top: 442em;  left: 36rem; width: 400px; }
+
+.con51 { top: 563rem; left: 50rem; }
+.con52 { top: 690rem; left: 40rem; width: 350px; }
+.con53 { top: 815rem; left: 30rem; }
+.con54 { top: 33rem;  left: 20rem; width: 800px; }
+.con55 { top: 155rem; left: 30rem; width: 300px; }
+.con56 { top: 595rem; left: 60rem; width: 300px; }
+.con57 { top: 713rem; left: 45rem; }
+.con58 { top: 3rem;   left: 15rem; width: 400px; }
+.con59 { top: 250rem; left: 50rem; width: 300px; }
+.con60 { top: 525rem; left: 37rem; width: 400px; }
+.con61 { top: 740rem; left: 35rem; width: 400px; }
+
+.con62 { top: 210rem; width: 1000px; }
+
+.con62 span:first-of-type {
+    font-size: 22px;
+}
+.con62 #infoTitanic {
+    margin-top: 2rem;
+
+    text-align: center;
+}
+
+
+
+/* Стили картинок */
+.con1  img { width: 250px; }
+.con2  img { width: 220px; }
+.con6  img { width: 200px; }
+.con8  img { width: 200px; }
+.con9  img { width: 200px; }
+.con11 img { width: 250px; }
+.con13 img { width: 400px; }
+.con14 img { width: 200px; }
+.con18 img { width: 250px; }
+.con23 img { width: 250px; }
+.con25 img { width: 600px; }
+.con27 span img { width: 300px; }
+.con31 img { width: 350px; }
+.con35 img { width: 300px; }
+.con36 img { width: 300px; }
+.con37 img { width: 350px; }
+.con38 img { width: 500px; }
+.con39 img { width: 400px; }
+.con42 img { width: 300px; }
+.con43 img { width: 300px; }
+.con45 img { width: 450px; }
+.con46 img { width: 350px; }
+.con47 img { width: 350px; }
+.con54 img { width: 750px; }
+.con58 img { width: 350px; }
+.con61 img { width: 200px; }
+.con62 img { border-radius: 6px; }
+
+/* Стили для пасхального яйца */
+.EasterEgg {
+    width: auto;
+
+    transform: translate(-115px, 72000px);
+    opacity: 1;
+}
+
+.EasterEgg:hover {
+    width: auto;
+
+    transform: translate(0px, 72000px);
+}
+
+.EasterEgg span {
+    height: auto;
+
+    opacity: 1;
+
+    text-align: center;
+    line-height: 25px;
+    color: #ffffff;
+}
