@@ -13,12 +13,12 @@
 }
 
 /* Стили мусора */
-.Trash .obj-trash {
+.Trash__item-trash {
     width: 300px;
     animation: TrashAnim 7s 0 linear;
 }
 
-.Trash .obj-trash {
+.Trash__item-trash {
     transition: .3s ease;
     opacity: 0;
 

@@ -40,7 +40,7 @@ header {
     align-items: center;
 }
 /* Стили лого */
-.Menu .Logo {
+.Menu__logo {
     width: 225px;
     height: 5vh;
 
@@ -53,12 +53,12 @@ header {
     align-items: center;
 }
 
-.Menu .Logo img {
+.Menu__image {
     width: 56px;
     overflow: hidden;
 }
 
-.Menu .Logo span {
+.Menu__text {
     color: #333;
     font-size: 22px;
     font-weight: 500;
@@ -66,7 +66,7 @@ header {
 }
 
 /* Стили ссылок гл. меню */
-.Menu .Links nav {
+.Menu__nav {
     width: 350px;
     height: 5vh;
 
@@ -75,27 +75,24 @@ header {
     align-items: center;
 }
 
-.Menu .Links a,
-.Menu .Links .href-1
-.Menu .Links .href-2
-.Menu .Links .href-3
-.Menu .Links .href-4 {
+.Menu__href,
+.Menu__span {
     font-size: 18px;
     color: #212121;
 
     transition: .2s ease;
 }
 
-.Menu .Links .headerLink:hover{
+.Menu__href:hover {
     color: #ff805d;
 }
 
-.Menu .Links .href-1 {
+.Menu__href-1 {
     font-weight: 600;
 }
 
 /* Стили выпадающего меню */
-.Menu .Links .href-3 div {
+.Menu__div {
     background-color: transparent;
     padding: 20px 0px;
 
@@ -104,35 +101,35 @@ header {
     display: none;
 }
 
-.Menu .Links .href-3:hover div {
+.Menu__span:hover .Menu__div {
     display: block;
 }
 
 
-.Menu .Links .href-3 div aside {
+.Menu__div-aside {
     background-color: #fff;
-    border-left: 1px solid;
-    border-right: 1px solid;
+    border-left: 1px solid #ff805d;
+    border-right: 1px solid #ff805d;
     padding: 20px;
 
     align-items: center;
     display: flex;
 }
 
-.Menu .Links .href-3 div aside:first-of-type {
-    border-top: 1px solid;
+.Menu__div-aside:first-of-type {
+    border-top: 1px solid #ff805d;
 }
 
-.Menu .Links .href-3 div aside:last-of-type {
-    border-bottom: 1px solid;
+.Menu__div-aside:last-of-type {
+    border-bottom: 1px solid #ff805d;
 }
 
-.Menu .Links .href-3 div img {
+.Menu__div-aside-image {
     width: 32px;
     margin-right: 10px;
 }
 
-.Menu .Links .href-3 div p {
+.Menu__div-aside-p {
     color: #212121;
 }
 
@@ -149,7 +146,7 @@ header {
 }
 
 /* Стили гл. текста */
-#TDS {
+.Text__TDS {
     position: relative;
 
     font-size: 96px;
@@ -162,7 +159,7 @@ header {
     transition: .3s ease;
 }
 
-.Text:hover #TDS {
+.Text:hover .Text__TDS {
     transform: translateY(-20px);
 }
 
@@ -175,7 +172,7 @@ header {
     overflow: hidden;
 }
 
-.obj-waves {
+.Wave__item {
     width: 6800px;
     height: 300px;
     position: absolute;
@@ -183,28 +180,28 @@ header {
     will-change: transform;
 }
 
-.Wave-Gray {
+.Wave__item-gray {
     background: url("../img/waveGray.png") repeat-x;
     animation: WaveGray 17s linear;
     animation-iteration-count: infinite;
     opacity: .6;
 }
 
-.Wave-Blue {
+.Wave__item-blue {
     background: url("../img/waveBlue.png") repeat-x;
     animation: WaveBlue 10s linear;
     animation-iteration-count: infinite;
     opacity: .5;
 }
 
-.Wave-WhiteOP {
+.Wave__item-whiteOP {
     background: url("../img/waveWO.png") repeat-x;
     animation: WaveWhiteOP 12s linear;
     animation-iteration-count: infinite;
     opacity: .7;
 }
 
-.Wave-White {
+.Wave__item-white {
     background: url("../img/waveWhite.png") repeat-x;
     animation: WaveWhite 15s linear;
     animation-iteration-count: infinite;
@@ -233,7 +230,7 @@ header {
 }
 
 /* Стили пузырей от волн */
-.Wave-Bubls {
+.Wave-bubls {
     width: 6800px;
     height: 400px;
     background: url("../img/waveBubls2.png") repeat-x;
@@ -246,12 +243,12 @@ header {
 
     opacity: 1;
     z-index: 1;
-    animation: Wave-Bubls 10s alternate;
+    animation: Wave-bubls 10s alternate;
     animation-iteration-count: infinite;
 }
 
 /* Стили анимации пузырей от волн */
-@keyframes Wave-Bubls {
+@keyframes Wave-bubls {
     0% { transform: translate(-150px); }
     100% { transform: translate(150px); }
 }

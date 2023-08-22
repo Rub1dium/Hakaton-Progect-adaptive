@@ -5,35 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="img/IconSea.png">
-    
-    <link rel="stylesheet" href="styles/StyleHeader.css">
-    <link rel="stylesheet" href="styles/StyleContent.css">
-    <link rel="stylesheet" href="styles/StyleFooter.css">
-    
-    <link rel="stylesheet" href="styles/StylebBubls.css">
-    <link rel="stylesheet" href="styles/StyleTrash.css">
+
+    <link rel="stylesheet" href="StyleIndex.css">
 
     <title>Глубокий океан</title>
 </head>
 
 <body>
-    <div class="Wave-Bubls"></div>
+    <div class="Wave-bubls"></div>
 
     <div class="Bubl">
-        <div class="Bubl-first"></div>
-        <div class="Bubl-second"></div>
+        <div class="Bubl__image-first"></div>
+        <div class="Bubl__image-second"></div>
     </div>
 
     <div class="Trash">
-        <img class="obj-trash Trash-1" src="img/Box.png" alt="">
-        <img class="obj-trash Trash-5" src="img/PlasticBottle2.png" alt="">
-        <img class="obj-trash Trash-2" src="img/Box1.png" alt="">
-        <img class="obj-trash Trash-3" src="img/PlasticBag.png" alt="">
-        <img class="obj-trash Trash-4" src="img/PlasticBottle.png" alt="">
+        <img class="Trash__item-trash Trash__item-trash-1" src="img/Box.png" alt="">
+        <img class="Trash__item-trash Trash__item-trash-2" src="img/PlasticBottle2.png" alt="">
+        <img class="Trash__item-trash Trash__item-trash-3" src="img/Box1.png" alt="">
+        <img class="Trash__item-trash Trash__item-trash-4" src="img/PlasticBag.png" alt="">
+        <img class="Trash__item-trash Trash__item-trash-5" src="img/PlasticBottle.png" alt="">
     </div>
 
     <div class="EasterEgg">
-        <span>
+        <span class="EasterEgg__text">
             Easter Egg<br>
             --------------<br>
             Марина Н. ❤️<br>
@@ -43,27 +38,27 @@
 
     <header>
         <div class="Menu">
-            <aside class="Logo">
+            <aside class="Menu__logo">
                 <figure>
-                    <img src="img/IconSea.png" alt="">
+                    <img class="Menu__image" src="img/IconSea.png" alt="">
                 </figure>
-                <span>Deep Ocean</span>
+                <span class="Menu__text">Deep Ocean</span>
             </aside>
 
-            <aside class="Links">
-                <nav>
-                    <a class="headerLink href-1" href="index.html">Главная</a>
-                    <a class="headerLink href-2" href="documentation.html">Документация</a>
-                    <span class="headerLink href-3">
+            <aside class="Menu__links">
+                <nav class="Menu__nav">
+                    <a class="Menu__href Menu__href-1" href="index.html">Главная</a>
+                    <a class="Menu__href Menu__href-2" href="documentation.html">Документация</a>
+                    <span class="Menu__span">
                         Связь
-                        <div>
-                            <aside>
-                                <img src="img/instagram.png" alt="">
+                        <div class="Menu__div">
+                            <aside class="Menu__div-aside">
+                                <img class="Menu__div-aside-image" src="img/instagram.png" alt="">
                                 <a href="https://www.instagram.com/_anuchkin_/" target="_blank">_anuchkin_</a>
                             </aside>
-                            <aside>
-                                <img src="img/gmail.png" alt="">
-                                <p>rubidium128@gmail.com</p>
+                            <aside class="Menu__div-aside">
+                                <img class="Menu__div-aside-image" src="img/gmail.png" alt="">
+                                <p class="Menu__div-aside-p">rubidium128@gmail.com</p>
                             </aside>
                         </div>
                     </span>
@@ -72,14 +67,14 @@
         </div>
 
         <div class="Text">
-            <span id="TDS">The Deep Ocean</span>
+            <span class="Text__TDS">The Deep Ocean</span>
         </div>
 
         <div class="Wave">
-            <div class="obj-waves Wave-Gray"></div>
-            <div class="obj-waves Wave-Blue"></div>
-            <div class="obj-waves Wave-WhiteOP"></div>
-            <div class="obj-waves Wave-White"></div>
+            <div class="Wave__item Wave__item-gray"></div>
+            <div class="Wave__item Wave__item-blue"></div>
+            <div class="Wave__item Wave__item-whiteOP"></div>
+            <div class="Wave__item Wave__item-white"></div>
         </div>
     </header>
 
@@ -87,11 +82,11 @@
 
     <main>
         <div class="Content"> 
-            <div class="Indicator">0 METERS DEEP</div>
+            <div class="Content__indicator">0 METERS DEEP</div>
 
             <section id="section0">
-                <div class="con con1"><img src
-                    ="img/ATLANTIC_SALMON.png" alt="">
+                <div class="con con1">
+                    <img src="img/ATLANTIC_SALMON.png" alt="">
                     <span>АТЛАНТИЧЕСКИЙ ЛОСОСЬ</span>
                     <span id="description">
                         Атлантический лосось, которого называют также благородным

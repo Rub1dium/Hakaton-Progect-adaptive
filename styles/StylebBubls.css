@@ -10,7 +10,7 @@
 }
 
 /* Стили пузыриков 1 */
-.Bubl-first {
+.Bubl__image-first {
     will-change: transform;
     opacity: 0;
     width: 2px;
@@ -24,7 +24,7 @@
 }
 
 /* Стили пузыриков 2 */
-.Bubl-second {
+.Bubl__image-second {
     will-change: transform;
 
     opacity: 0;

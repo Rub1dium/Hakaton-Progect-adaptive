@@ -6,7 +6,7 @@ function RandoMizer() {
         item.style.animationIterationCount = 0;
     }
 
-    $(".obj-trash").appendTo($(".obj-trash").parent());
+    $(".Trash__item-trash").appendTo($(".Trash__item-trash").parent());
 
     if (RandNum == 3) {
         trash1.style.opacity = .2;
@@ -31,26 +31,27 @@ function RandoMizer() {
 }
 
 /* Определение переменных */
-let objTrash = document.querySelectorAll('.obj-trash');
-let trash1 = document.querySelector('.Trash-1');
-let trash2 = document.querySelector('.Trash-2');
-let trash3 = document.querySelector('.Trash-3');
-let trash4 = document.querySelector('.Trash-4');
-let trash5 = document.querySelector('.Trash-5');
+let objTrash = document.querySelectorAll('.Trash__item-trash');
+let trash1 = document.querySelector('.Trash__item-trash-1');
+let trash2 = document.querySelector('.Trash__item-trash-2');
+let trash3 = document.querySelector('.Trash__item-trash-3');
+let trash4 = document.querySelector('.Trash__item-trash-4');
+let trash5 = document.querySelector('.Trash__item-trash-5');
 
-let start = 0;
+let start = false;
 let timerID;
 
-let waveGray = document.querySelector('.Wave-Gray');
-let waveBlue = document.querySelector('.Wave-Blue');
-let waveWhite = document.querySelector('.Wave-White');
-let waveBubls = document.querySelector('.Wave-Bubls');
+let waveGray = document.querySelector('.Wave__item-gray');
+let waveBlue = document.querySelector('.Wave__item-blue');
+let waveWhite = document.querySelector('.Wave__item-white');
+let waveWhiteOP = document.querySelector('.Wave__item-whiteOP');
+let waveBubls = document.querySelector('.Wave-bubls');
 
-let bublFirst = document.querySelector(".Bubl-first");
-let bublSecond = document.querySelector(".Bubl-second");
+let bublFirst = document.querySelector(".Bubl__image-first");
+let bublSecond = document.querySelector(".Bubl__image-second");
 
-let indicator = document.querySelector(".Indicator").classList;
-let indicatorText = document.querySelector('.Indicator');
+let indicator = document.querySelector(".Content__indicator").classList;
+let indicatorText = document.querySelector('.Content__indicator');
 
 
 /* Прослушка скролла */
@@ -59,15 +60,16 @@ window.addEventListener('scroll', () => {
 
     /* Изменение индикатора глубны */
     if (window.scrollY > 456) {
-        indicator.add("Indicator-Show");
+        indicator.add("Content__indicator_visible")
         indicatorText.textContent = metres + ' МЕТРОВ ГЛУБИНА';
     } else {
-        indicator.remove("Indicator-Show");
+        indicator.remove("Content__indicator_visible")
+
     }
 
     /* Скрыть индикатор */
     if (window.scrollY > 77160) {
-        indicator.remove("Indicator-Show");
+        indicator.remove("Content__indicator_visible");
     }
 
     /* Появление пузырьков в воде */
@@ -94,18 +96,20 @@ window.addEventListener('scroll', () => {
         waveGray.style.animationIterationCount = "infinite";
         waveBlue.style.animationIterationCount = "infinite";
         waveWhite.style.animationIterationCount = "infinite";
+        waveWhiteOP.style.animationIterationCount = "infinite"
     } else {
         waveBubls.style.animationIterationCount = 0;
         waveGray.style.animationIterationCount = 0;
         waveBlue.style.animationIterationCount = 0;
         waveWhite.style.animationIterationCount = 0;
+        waveWhiteOP.style.animationIterationCount = 0;
     }
 
     /* Появление мусора && Скрыть мусор */
-    if (metres > 250 && start == 0) {
+    if (metres > 250 && start == false) {
         timerID = setInterval(RandoMizer, 7000);
-        start = 1;
-    } else if (metres < 250 || metres > 3825 && start == 1) {
+        start = true;
+    } else if (metres < 250 || metres > 3825 && start == true) {
         for (let item of objTrash) {
             item.style.animationIterationCount = 1;
             item.style.opacity = 0
@@ -113,7 +117,7 @@ window.addEventListener('scroll', () => {
 
         clearInterval(timerID);
         console.log("off");
-        start = 0;
+        start = false;
     }
 
 });
