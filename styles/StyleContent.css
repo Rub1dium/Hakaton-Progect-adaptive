@@ -50,9 +50,10 @@
 }
 
 /* Стили для секции */
-section {
+section, .Content__section-second {
     width: 1600px;
     height: 14500px;
+
     position: absolute;
 
     font-size: 16px;
@@ -63,13 +64,13 @@ section {
 }
 
 
-
 /* Стили для расположения секций с блоками */
-#section1 { margin-top: 14500px; }
-#section2 { margin-top: 29000px; }
-#section3 { margin-top: 43500px; }
-#section4 { margin-top: 58000px; }
-#section5 { 
+
+.Content__section-second { margin-top: 14500px; }
+.Content__section-third { margin-top: 29000px; }
+.Content__section-fourth { margin-top: 43500px; }
+.Content__section-fifth { margin-top: 58000px; }
+.Content__section-sixth {
     height: 4050px;
     margin-top: 72500px;
 
@@ -78,24 +79,15 @@ section {
 }
 
 
-
-/* Отключение настроек "по умолчанию"  */
-figure {
-    margin: 0;
-    padding: 0;
-}
-
-
-
 /* Отступ для гл. текста блоков */
-section div span:first-of-type {
+.Content__div .Content__name-fish {
     transform: translateY(10px);
 }
 
 
 
 /* Описание существ */
-#description {
+.Content__description {
     background-color: #fff;
     border-radius: 6px;
     padding: 20px;
@@ -108,7 +100,7 @@ section div span:first-of-type {
     transition: .5s ease;
 }
 
-.con:hover #description {
+.Content__div:hover .Content__description {
     margin-top: 1rem;
 
     transform: translateY(0);
@@ -119,7 +111,7 @@ section div span:first-of-type {
 
 
 /* Стили текста "СУМЕРЕЧНАЯ ЗОНА" */
-.TTZ {
+.Content__TTZ {
     position: absolute;
     top: 251rem;
     left: 33.8rem;
@@ -132,7 +124,7 @@ section div span:first-of-type {
 
 
 /* Стили текста "ПОЛУНОЧНАЯ ЗОНА" */
-.TMZ { 
+.Content__TMZ { 
     position: absolute;
     top: 348rem;
     left: 33.4rem;
@@ -142,7 +134,7 @@ section div span:first-of-type {
     color: #eac7fa;
 }
 
-.Sunlight {
+.Sun-light {
     position: absolute;
     top: 365rem;
     left: 37.5rem;
@@ -154,19 +146,7 @@ section div span:first-of-type {
 
 
 /* Стили контейнеров */
-.con1, .con2, .con3, .con4, .con5,
-.con6, .con7, .con8, .con9, .con10,
-.con11, .con12, .con13, .con14, .con15,
-.con16, .con17, .con18, .con19, .con20,
-.con21, .con22, .con23, .con24, .con25,
-.con26, .con27, .con28, .con29, .con30,
-.con31, .con32, .con33, .con34, .con35,
-.con36, .con37, .con38, .con39, .con40,
-.con41, .con42, .con43, .con44, .con45,
-.con46, .con47, .con48, .con49, .con50,
-.con51, .con52, .con53, .con54, .con55,
-.con56, .con57, .con58, .con59, .con60,
-.con61, .EasterEgg, .con62 {
+.Content__div, .EasterEgg {
     width: 250px;
     height: auto;
 
@@ -181,97 +161,97 @@ section div span:first-of-type {
     transition: .5s ease;
 }
 
-.objCon-show { opacity: 1; } /* Стиль для появления контейнеров */
+.Content__div_visible { opacity: 1; } /* Стиль для появления контейнеров */
 
 
 
 /* Стили для расположения контейнеров */
-.con1  { left: 10rem; }
-.con2  { left: 60rem; }
-.con3  { top: 15rem;  left: 35rem; }
-.con4  { top: 15rem;  left: 80rem; }
-.con5  { top: 35rem;  left: 10rem; }
-.con6  { top: 35rem;  left: 60rem; }
-.con7  { top: 47rem;  left: 35rem; }
-.con8  { top: 45rem;  left: 80rem; }
-.con9  { top: 56rem;  left: 10rem; }
+.Content__div-1  { left: 10rem; }
+.Content__div-2  { left: 60rem; }
+.Content__div-3  { top: 15rem;  left: 35rem; }
+.Content__div-4  { top: 15rem;  left: 80rem; }
+.Content__div-5  { top: 35rem;  left: 10rem; }
+.Content__div-6  { top: 35rem;  left: 60rem; }
+.Content__div-7  { top: 47rem;  left: 35rem; }
+.Content__div-8  { top: 45rem;  left: 80rem; }
+.Content__div-9  { top: 56rem;  left: 10rem; }
 
-.con10 { top: 56rem;  left: 60rem; width: 300px; }
-.con11 { top: 77rem;  left: 20rem; }
-.con12 { top: 97rem;  left: 60rem; width: 300px; }
-.con13 { top: 127rem; left: 37rem; width: 400px; }
-.con14 { top: 150rem; left: 10rem; width: 350px; }
-.con15 { top: 155rem; left: 65rem; width: 350px; }
-.con16 { top: 170rem; left: 20rem; }
-.con17 { top: 190rem; left: 60rem; width: 320px; }
-.con18 { top: 205rem; left: 10rem; width: 550px; }
-.con19 { top: 230rem; left: 60rem; }
-.con20 { top: 235rem; left: 25rem; width: 350px; }
+.Content__div-10 { top: 56rem;  left: 60rem; width: 300px; }
+.Content__div-11 { top: 77rem;  left: 20rem; }
+.Content__div-12 { top: 97rem;  left: 60rem; width: 300px; }
+.Content__div-13 { top: 127rem; left: 37rem; width: 400px; }
+.Content__div-14 { top: 150rem; left: 10rem; width: 350px; }
+.Content__div-15 { top: 155rem; left: 65rem; width: 350px; }
+.Content__div-16 { top: 170rem; left: 20rem; }
+.Content__div-17 { top: 190rem; left: 60rem; width: 320px; }
+.Content__div-18 { top: 205rem; left: 10rem; width: 550px; }
+.Content__div-19 { top: 230rem; left: 60rem; }
+.Content__div-20 { top: 235rem; left: 25rem; width: 350px; }
 
-.con21 { top: 265rem; left: 20rem; width: 300px; }
-.con22 { top: 280rem; left: 60rem; width: 350px; }
-.con23 { top: 295rem; left: 25rem; width: 300px; }
-.con24 { top: 325rem; left: 60rem; width: 350px; }
-.con25 { top: 335rem; left: 30rem; width: 450px; }
-.con26 { top: 398rem; left: 35rem; width: 400px; }
+.Content__div-21 { top: 265rem; left: 20rem; width: 300px; }
+.Content__div-22 { top: 280rem; left: 60rem; width: 350px; }
+.Content__div-23 { top: 295rem; left: 25rem; width: 300px; }
+.Content__div-24 { top: 325rem; left: 60rem; width: 350px; }
+.Content__div-25 { top: 335rem; left: 30rem; width: 450px; }
+.Content__div-26 { top: 398rem; left: 35rem; width: 400px; }
 
-.con27 { top: 420rem; left: 20rem; width: 1000px;}
-.con27 #diver { margin-top: 20px; }
+.Content__div-27 { top: 420rem; left: 20rem; width: 1000px;}
+.Content__div-27 #diver { margin-top: 20px; }
 
-.con27 span:first-child {
+.Content__div-27 span:first-child {
     font-size: 24px;
     line-height: 38px;
 }
 
-.con27 #description {
+.Content__div-27 #description {
     display: flex;
     gap: 15px;
 }
 
-.con28 { top: 475rem; left: 41rem; }
-.con29 { top: 575rem; left: 41rem; }
-.con30 { top: 627rem; left: 35rem; width: 500px; }
+.Content__div-28 { top: 475rem; left: 41rem; }
+.Content__div-29 { top: 575rem; left: 41rem; }
+.Content__div-30 { top: 627rem; left: 35rem; width: 500px; }
 
-.con31 { top: 685rem; left: 37rem; width: 400px; }
-.con32 { top: 800rem; left: 38rem; width: 350px; }
-.con33 { top: 875rem; left: 37rem; width: 400px; }
-.con34 { top: 0rem;   left: 60rem; width: 300px; }
-.con35 { top: 47rem;  left: 10rem; width: 400px; }
-.con36 { top: 100rem; left: 45rem; width: 350px; }
-.con37 { top: 130rem; left: 15rem; width: 400px; }
-.con38 { top: 240rem; left: 36rem; width: 500px; }
-.con39 { top: 280rem; left: 15rem; width: 450px; }
-.con40 { top: 315rem; left: 35rem; width: 450px; }
+.Content__div-31 { top: 685rem; left: 37rem; width: 400px; }
+.Content__div-32 { top: 800rem; left: 38rem; width: 350px; }
+.Content__div-33 { top: 875rem; left: 37rem; width: 400px; }
+.Content__div-34 { top: 0rem;   left: 60rem; width: 300px; }
+.Content__div-35 { top: 47rem;  left: 10rem; width: 400px; }
+.Content__div-36 { top: 100rem; left: 45rem; width: 350px; }
+.Content__div-37 { top: 130rem; left: 15rem; width: 400px; }
+.Content__div-38 { top: 240rem; left: 36rem; width: 500px; }
+.Content__div-39 { top: 280rem; left: 15rem; width: 450px; }
+.Content__div-40 { top: 315rem; left: 35rem; width: 450px; }
 
-.con41 { top: 395rem; left: 15rem; width: 350px; }
-.con42 { top: 455rem; left: 30rem; width: 350px; }
-.con43 { top: 545rem; left: 50rem; width: 400px; }
-.con44 { top: 595rem; left: 30rem; width: 520px; }
-.con45 { top: 702rem; left: 60rem; width: 450px; }
-.con46 { top: 805rem; left: 40rem; width: 400px; }
-.con47 { top: 30rem;  left: 15rem; width: 400px; }
-.con48 { top: 130rem; left: 25rem; width: 400px; }
-.con49 { top: 345rem; left: 30rem; width: 400px; }
-.con50 { top: 442em;  left: 36rem; width: 400px; }
+.Content__div-41 { top: 395rem; left: 15rem; width: 350px; }
+.Content__div-42 { top: 455rem; left: 30rem; width: 350px; }
+.Content__div-43 { top: 545rem; left: 50rem; width: 400px; }
+.Content__div-44 { top: 595rem; left: 30rem; width: 520px; }
+.Content__div-45 { top: 702rem; left: 60rem; width: 450px; }
+.Content__div-46 { top: 805rem; left: 40rem; width: 400px; }
+.Content__div-47 { top: 30rem;  left: 15rem; width: 400px; }
+.Content__div-48 { top: 130rem; left: 25rem; width: 400px; }
+.Content__div-49 { top: 345rem; left: 30rem; width: 400px; }
+.Content__div-50 { top: 442em;  left: 36rem; width: 400px; }
 
-.con51 { top: 563rem; left: 50rem; }
-.con52 { top: 690rem; left: 40rem; width: 350px; }
-.con53 { top: 815rem; left: 30rem; }
-.con54 { top: 33rem;  left: 20rem; width: 800px; }
-.con55 { top: 155rem; left: 30rem; width: 300px; }
-.con56 { top: 595rem; left: 60rem; width: 300px; }
-.con57 { top: 713rem; left: 45rem; }
-.con58 { top: 3rem;   left: 15rem; width: 400px; }
-.con59 { top: 250rem; left: 50rem; width: 300px; }
-.con60 { top: 525rem; left: 37rem; width: 400px; }
-.con61 { top: 740rem; left: 35rem; width: 400px; }
+.Content__div-51 { top: 563rem; left: 50rem; }
+.Content__div-52 { top: 690rem; left: 40rem; width: 350px; }
+.Content__div-53 { top: 815rem; left: 30rem; }
+.Content__div-54 { top: 33rem;  left: 20rem; width: 800px; }
+.Content__div-55 { top: 155rem; left: 30rem; width: 300px; }
+.Content__div-56 { top: 595rem; left: 60rem; width: 300px; }
+.Content__div-57 { top: 713rem; left: 45rem; }
+.Content__div-58 { top: 3rem;   left: 15rem; width: 400px; }
+.Content__div-59 { top: 250rem; left: 50rem; width: 300px; }
+.Content__div-60 { top: 525rem; left: 37rem; width: 400px; }
+.Content__div-61 { top: 740rem; left: 35rem; width: 400px; }
 
-.con62 { top: 210rem; width: 1000px; }
+.Content__div-62 { top: 210rem; width: 1000px; }
 
-.con62 span:first-of-type {
+.Content__div-62 span:first-of-type {
     font-size: 22px;
 }
-.con62 #infoTitanic {
+.Content__div-62 #infoTitanic {
     margin-top: 2rem;
 
     text-align: center;
@@ -280,33 +260,33 @@ section div span:first-of-type {
 
 
 /* Стили картинок */
-.con1  img { width: 250px; }
-.con2  img { width: 220px; }
-.con6  img { width: 200px; }
-.con8  img { width: 200px; }
-.con9  img { width: 200px; }
-.con11 img { width: 250px; }
-.con13 img { width: 400px; }
-.con14 img { width: 200px; }
-.con18 img { width: 250px; }
-.con23 img { width: 250px; }
-.con25 img { width: 600px; }
-.con27 span img { width: 300px; }
-.con31 img { width: 350px; }
-.con35 img { width: 300px; }
-.con36 img { width: 300px; }
-.con37 img { width: 350px; }
-.con38 img { width: 500px; }
-.con39 img { width: 400px; }
-.con42 img { width: 300px; }
-.con43 img { width: 300px; }
-.con45 img { width: 450px; }
-.con46 img { width: 350px; }
-.con47 img { width: 350px; }
-.con54 img { width: 750px; }
-.con58 img { width: 350px; }
-.con61 img { width: 200px; }
-.con62 img { border-radius: 6px; }
+.Content__image-1  { width: 250px; }
+.Content__image-2  { width: 220px; }
+.Content__image-6  { width: 200px; }
+.Content__image-8  { width: 200px; }
+.Content__image-9  { width: 200px; }
+.Content__image-11 { width: 250px; }
+.Content__image-13 { width: 400px; }
+.Content__image-14 { width: 200px; }
+.Content__image-18 { width: 250px; }
+.Content__image-23 { width: 250px; }
+.Content__image-25 { width: 600px; }
+.Content__image-27 span img { width: 300px; }
+.Content__image-31 { width: 350px; }
+.Content__image-35 { width: 300px; }
+.Content__image-36 { width: 300px; }
+.Content__image-37 { width: 350px; }
+.Content__image-38 { width: 500px; }
+.Content__image-39 { width: 400px; }
+.Content__image-42 { width: 300px; }
+.Content__image-43 { width: 300px; }
+.Content__image-45 { width: 450px; }
+.Content__image-46 { width: 350px; }
+.Content__image-47 { width: 350px; }
+.Content__image-54 { width: 750px; }
+.Content__image-58 { width: 350px; }
+.Content__image-61 { width: 200px; }
+.Content__image-52 { border-radius: 6px; }
 
 /* Стили для пасхального яйца */
 .EasterEgg {

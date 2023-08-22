@@ -2,14 +2,14 @@
 function onEntry(entry) {
     entry.forEach(element => {
         if (element.isIntersecting) {
-            element.target.classList.add('objCon-show')
+            element.target.classList.add('Content__div_visible')
         }
     });
 }
 
 let options = { threshold: [.5] };
 let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('.con');
+let elements = document.querySelectorAll('.Content__div');
 
 for (let elm of elements) {
     observer.observe(elm)

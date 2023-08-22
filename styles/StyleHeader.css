@@ -83,7 +83,7 @@ header {
     transition: .2s ease;
 }
 
-.Menu__href:hover {
+.Menu__href:hover, .Menu__span:hover {
     color: #ff805d;
 }
 
@@ -108,8 +108,8 @@ header {
 
 .Menu__div-aside {
     background-color: #fff;
-    border-left: 1px solid #ff805d;
-    border-right: 1px solid #ff805d;
+    border-left: 1px solid;
+    border-right: 1px solid;
     padding: 20px;
 
     align-items: center;
@@ -117,11 +117,11 @@ header {
 }
 
 .Menu__div-aside:first-of-type {
-    border-top: 1px solid #ff805d;
+    border-top: 1px solid;
 }
 
 .Menu__div-aside:last-of-type {
-    border-bottom: 1px solid #ff805d;
+    border-bottom: 1px solid;
 }
 
 .Menu__div-aside-image {
