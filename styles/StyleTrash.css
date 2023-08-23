@@ -28,5 +28,5 @@
 /* Анимация мусора  */
 @keyframes TrashAnim {
     0% { transform: translateY(-25rem) rotate(0deg); }
-    100% { transform: translateY(75rem) rotate(45deg);}
+    100% { transform: translateY(70rem) rotate(45deg);}
 }

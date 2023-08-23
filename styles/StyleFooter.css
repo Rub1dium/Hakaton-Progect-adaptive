@@ -10,16 +10,16 @@ footer {
 }
 
 /* Стиль перехода */
-footer .sand-transition img {
+.Sand-transition__sand-image {
     background-color: #000;
 }
 
 /* Стили гл. контейнера для текста */
-footer .Text {
+.Sand-transition__text {
     width: 1200px;
     height: 600px;
 
-    transform: translateY(-50px);
+    transform: translateY(50px);
 
     display: flex;
     align-items: center;
@@ -28,19 +28,19 @@ footer .Text {
 }
 
 /* Стили текса */
-footer .Text .Logo {
+.Sand-transition__logo {
     font-weight: 700;
     font-size: 60px;
     color: #333;
 }
 
-footer .Text .By {
+.Sand-transition__by {
     font-weight: 500;
     color: #4d4d80;
 }
 
 /* Стили ссылок */
-footer .Text .Links {
+.Sand-transition__nav {
     font-size: 26px;
 
     margin-top: 70px;
@@ -49,7 +49,9 @@ footer .Text .Links {
     gap: 40px;
 }
 
-footer .Text a, footer .Text span {
+.Sand-transition__href,
+.Sand-transition__span,
+.Sand-transition__anchor {
     font-size: 18px;
     color: #212121;
     text-decoration: none;
@@ -57,16 +59,17 @@ footer .Text a, footer .Text span {
     transition: .2s ease;
 }
 
-footer .Links .footerLink:hover {
+.Sand-transition__href:hover,
+.Sand-transition__span:hover {
     color: #ff805d;
 }
 
-footer .Links .href-1 {
+.Sand-transition__href-1 {
     font-weight: 600;
 }
 
 /* Стили выпадающего меню */
-footer .Links .href-3 div {
+.Sand-transition__div {
     background-color: transparent;
     padding: 20px 0px;
 
@@ -75,12 +78,12 @@ footer .Links .href-3 div {
     display: none;
 }
 
-footer .Links .href-3:hover div {
+.Sand-transition__span:hover .Sand-transition__div {
     display: block;
 }
 
 
-footer .Links .href-3 div aside {
+.Sand-transition__aside {
     background-color: #fff;
     border-left: 1px solid;
     border-right: 1px solid;
@@ -90,19 +93,19 @@ footer .Links .href-3 div aside {
     align-items: center;
 }
 
-footer .Links .href-3 div aside:first-of-type {
+.Sand-transition__aside:first-of-type {
     border-top: 1px solid;
 }
 
-footer .Links .href-3 div aside:last-of-type {
+.Sand-transition__aside:last-of-type {
     border-bottom: 1px solid;
 }
 
-footer .Links .href-3 div img {
+.Sand-transition__image {
     width: 32px;
     margin-right: 10px;
 }
 
-footer .Links .href-3 div p {
+.Sand-transition__p {
     color: #212121;
 }

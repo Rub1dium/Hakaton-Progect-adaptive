@@ -12,6 +12,8 @@
     scroll-behavior: smooth;
 }
 
+
+
 /* Стили для шапки */
 header {
     width: 100vw;
@@ -174,6 +176,7 @@ header {
 
 .Wave__item {
     width: 6800px;
+    /* width: 100%; */
     height: 300px;
     position: absolute;
 
@@ -230,14 +233,23 @@ header {
 }
 
 /* Стили пузырей от волн */
+
+.WaveBubls {
+    width: 100%;
+    height: 400px;
+
+    position: absolute;
+    top: 50rem;
+    overflow: hidden;
+}
+
 .Wave-bubls {
     width: 6800px;
     height: 400px;
     background: url("../img/waveBubls2.png") repeat-x;
 
     position: absolute;
-    top: 50rem;
-    left: -230rem;
+    left: -20rem;
 
     will-change: transform;
 

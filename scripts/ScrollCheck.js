@@ -54,12 +54,24 @@ let indicator = document.querySelector(".Content__indicator").classList;
 let indicatorText = document.querySelector('.Content__indicator');
 
 
+$(document).ready(function() {
+    $(window).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
+        delta = parseInt(event.originalEvent.wheelDelta || -event.originalEvent.detail);
+        if (delta >= 0) {
+            $('#result').html('Вверх');
+        } else {
+            $('#result').html('Вниз');
+        }
+    });
+})
+
+
 /* Прослушка скролла */
 window.addEventListener('scroll', () => {
     let metres = Math.round((window.scrollY - 460) / 20);
 
     /* Изменение индикатора глубны */
-    if (window.scrollY > 456) {
+    if (window.scrollY > 460) {
         indicator.add("Content__indicator_visible")
         indicatorText.textContent = metres + ' МЕТРОВ ГЛУБИНА';
     } else {
@@ -109,14 +121,13 @@ window.addEventListener('scroll', () => {
     if (metres > 250 && start == false) {
         timerID = setInterval(RandoMizer, 7000);
         start = true;
-    } else if (metres < 250 || metres > 3825 && start == true) {
+    } else if ((metres < 250 || metres > 3825) && start == true) {
         for (let item of objTrash) {
             item.style.animationIterationCount = 1;
             item.style.opacity = 0
         }
 
         clearInterval(timerID);
-        console.log("off");
         start = false;
     }
 

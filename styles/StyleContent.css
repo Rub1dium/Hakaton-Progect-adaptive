@@ -28,8 +28,12 @@
 
     border-bottom: 1px dashed #ffffff67;
 
+    pointer-events: none;
     opacity: 0;
     z-index: 1;
+
+    position: fixed;
+    bottom: 300px;
 
     font-size: 24px;
     font-weight: bold;
@@ -39,19 +43,17 @@
     justify-content: center;
     align-items: center;
 
-    transition: .5s ease;
+    transition: .3s ease;
 }
 
 .Content__indicator_visible {
     opacity: 1;
-
-    position: fixed;
-    bottom: 200px;
 }
 
 /* Стили для секции */
-section, .Content__section-second {
+section, .Content__section-first {
     width: 1600px;
+    width: 85%;
     height: 14500px;
 
     position: absolute;
@@ -61,11 +63,12 @@ section, .Content__section-second {
     color: #fff;
 
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
 /* Стили для расположения секций с блоками */
-
 .Content__section-second { margin-top: 14500px; }
 .Content__section-third { margin-top: 29000px; }
 .Content__section-fourth { margin-top: 43500px; }
@@ -75,7 +78,6 @@ section, .Content__section-second {
     margin-top: 72500px;
 
     display: flex;
-    justify-content: center;
 }
 
 
@@ -90,10 +92,11 @@ section, .Content__section-second {
 .Content__description {
     background-color: #fff;
     border-radius: 6px;
+
     padding: 20px;
 
-    transform: translateY(-130px);
     opacity: 0;
+    transform: translateY(-130px);
 
     color: #2c2c54;
 
@@ -163,39 +166,61 @@ section, .Content__section-second {
 
 .Content__div_visible { opacity: 1; } /* Стиль для появления контейнеров */
 
+.Content__div_left {
+    left: 10%;
+}
+
+.Content__div_betweenLC {
+    left: 23%;
+}
+
+.Content__div_center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Content__div_betweenRC {
+    left: 60%;
+}
+
+.Content__div_right {
+    left: 90%;
+    transform: translateX(-90%);
+    justify-content: space-between;
+}
+
+
 
 
 /* Стили для расположения контейнеров */
-.Content__div-1  { left: 10rem; }
-.Content__div-2  { left: 60rem; }
-.Content__div-3  { top: 15rem;  left: 35rem; }
-.Content__div-4  { top: 15rem;  left: 80rem; }
-.Content__div-5  { top: 35rem;  left: 10rem; }
-.Content__div-6  { top: 35rem;  left: 60rem; }
-.Content__div-7  { top: 47rem;  left: 35rem; }
-.Content__div-8  { top: 45rem;  left: 80rem; }
-.Content__div-9  { top: 56rem;  left: 10rem; }
+.Content__div-3  { top: 15rem; }
+.Content__div-4  { top: 15rem; }
+.Content__div-5  { top: 35rem; }
+.Content__div-6  { top: 35rem; }
+.Content__div-7  { top: 47rem; }
+.Content__div-8  { top: 45rem; }
+.Content__div-9  { top: 56rem; }
 
-.Content__div-10 { top: 56rem;  left: 60rem; width: 300px; }
-.Content__div-11 { top: 77rem;  left: 20rem; }
-.Content__div-12 { top: 97rem;  left: 60rem; width: 300px; }
-.Content__div-13 { top: 127rem; left: 37rem; width: 400px; }
-.Content__div-14 { top: 150rem; left: 10rem; width: 350px; }
-.Content__div-15 { top: 155rem; left: 65rem; width: 350px; }
-.Content__div-16 { top: 170rem; left: 20rem; }
-.Content__div-17 { top: 190rem; left: 60rem; width: 320px; }
-.Content__div-18 { top: 205rem; left: 10rem; width: 550px; }
-.Content__div-19 { top: 230rem; left: 60rem; }
-.Content__div-20 { top: 235rem; left: 25rem; width: 350px; }
+.Content__div-10 { top: 56rem;  width: 300px; }
+.Content__div-11 { top: 77rem; }
+.Content__div-12 { top: 97rem;  width: 300px; }
+.Content__div-13 { top: 127rem; width: 400px; }
+.Content__div-14 { top: 150rem; width: 350px; }
+.Content__div-15 { top: 155rem; width: 350px; }
+.Content__div-16 { top: 170rem; }
+.Content__div-17 { top: 190rem; width: 320px; }
+.Content__div-18 { top: 205rem; width: 550px; }
+.Content__div-19 { top: 230rem; }
+.Content__div-20 { top: 235rem; width: 350px; }
 
-.Content__div-21 { top: 265rem; left: 20rem; width: 300px; }
-.Content__div-22 { top: 280rem; left: 60rem; width: 350px; }
-.Content__div-23 { top: 295rem; left: 25rem; width: 300px; }
-.Content__div-24 { top: 325rem; left: 60rem; width: 350px; }
-.Content__div-25 { top: 335rem; left: 30rem; width: 450px; }
-.Content__div-26 { top: 398rem; left: 35rem; width: 400px; }
+.Content__div-21 { top: 265rem; width: 300px; }
+.Content__div-22 { top: 280rem; width: 350px; }
+.Content__div-23 { top: 295rem; width: 300px; }
+.Content__div-24 { top: 325rem; width: 350px; }
+.Content__div-25 { top: 335rem; width: 450px; }
+.Content__div-26 { top: 398rem; width: 400px; }
 
-.Content__div-27 { top: 420rem; left: 30rem; width: 650px; }
+.Content__div-27 { top: 420rem; width: 650px; }
 .Content__images-27-diver { margin-top: 20px; }
 
 .Content__div-27 .Content__description:first-of-type {
@@ -207,43 +232,43 @@ section, .Content__section-second {
     gap: 15px;
 }
 
-.Content__div-28 { top: 475rem; left: 41rem; }
-.Content__div-29 { top: 575rem; left: 41rem; }
-.Content__div-30 { top: 627rem; left: 35rem; width: 500px; }
+.Content__div-28 { top: 475rem; }
+.Content__div-29 { top: 575rem; }
+.Content__div-30 { top: 627rem; width: 500px; }
 
-.Content__div-31 { top: 685rem; left: 37rem; width: 400px; }
-.Content__div-32 { top: 800rem; left: 38rem; width: 350px; }
-.Content__div-33 { top: 875rem; left: 37rem; width: 400px; }
-.Content__div-34 { top: 0rem;   left: 60rem; width: 300px; }
-.Content__div-35 { top: 47rem;  left: 10rem; width: 400px; }
-.Content__div-36 { top: 100rem; left: 45rem; width: 350px; }
-.Content__div-37 { top: 130rem; left: 15rem; width: 400px; }
-.Content__div-38 { top: 240rem; left: 36rem; width: 500px; }
-.Content__div-39 { top: 280rem; left: 15rem; width: 450px; }
-.Content__div-40 { top: 315rem; left: 35rem; width: 450px; }
+.Content__div-31 { top: 685rem; width: 400px; }
+.Content__div-32 { top: 800rem; width: 350px; }
+.Content__div-33 { top: 875rem; width: 400px; }
+.Content__div-34 { top: 0rem;   width: 300px; }
+.Content__div-35 { top: 47rem;  width: 400px; }
+.Content__div-36 { top: 100rem; width: 350px; }
+.Content__div-37 { top: 130rem; width: 400px; }
+.Content__div-38 { top: 240rem; width: 500px; }
+.Content__div-39 { top: 280rem; width: 450px; }
+.Content__div-40 { top: 315rem; width: 450px; }
 
-.Content__div-41 { top: 395rem; left: 15rem; width: 350px; }
-.Content__div-42 { top: 455rem; left: 30rem; width: 350px; }
-.Content__div-43 { top: 545rem; left: 50rem; width: 400px; }
-.Content__div-44 { top: 595rem; left: 30rem; width: 520px; }
-.Content__div-45 { top: 702rem; left: 60rem; width: 450px; }
-.Content__div-46 { top: 805rem; left: 40rem; width: 400px; }
-.Content__div-47 { top: 30rem;  left: 15rem; width: 400px; }
-.Content__div-48 { top: 130rem; left: 25rem; width: 400px; }
-.Content__div-49 { top: 345rem; left: 30rem; width: 400px; }
-.Content__div-50 { top: 442em;  left: 36rem; width: 400px; }
+.Content__div-41 { top: 395rem; width: 350px; }
+.Content__div-42 { top: 455rem; width: 350px; }
+.Content__div-43 { top: 545rem; width: 400px; }
+.Content__div-44 { top: 595rem; width: 520px; }
+.Content__div-45 { top: 702rem; width: 450px; }
+.Content__div-46 { top: 805rem; width: 400px; }
+.Content__div-47 { top: 30rem;  width: 400px; }
+.Content__div-48 { top: 130rem; width: 400px; }
+.Content__div-49 { top: 345rem; width: 400px; }
+.Content__div-50 { top: 442em;  width: 400px; }
 
-.Content__div-51 { top: 563rem; left: 50rem; }
-.Content__div-52 { top: 690rem; left: 40rem; width: 350px; }
-.Content__div-53 { top: 815rem; left: 30rem; }
-.Content__div-54 { top: 33rem;  left: 20rem; width: 800px; }
-.Content__div-55 { top: 155rem; left: 30rem; width: 300px; }
-.Content__div-56 { top: 595rem; left: 60rem; width: 300px; }
-.Content__div-57 { top: 713rem; left: 45rem; }
-.Content__div-58 { top: 3rem;   left: 15rem; width: 400px; }
-.Content__div-59 { top: 250rem; left: 50rem; width: 300px; }
-.Content__div-60 { top: 525rem; left: 37rem; width: 400px; }
-.Content__div-61 { top: 740rem; left: 35rem; width: 400px; }
+.Content__div-51 { top: 563rem; }
+.Content__div-52 { top: 690rem; width: 350px; }
+.Content__div-53 { top: 815rem; }
+.Content__div-54 { top: 33rem;  width: 800px; }
+.Content__div-55 { top: 155rem; width: 300px; }
+.Content__div-56 { top: 595rem; width: 300px; }
+.Content__div-57 { top: 713rem; }
+.Content__div-58 { top: 3rem;   width: 400px; }
+.Content__div-59 { top: 250rem; width: 300px; }
+.Content__div-60 { top: 525rem; width: 400px; }
+.Content__div-61 { top: 740rem; width: 400px; }
 
 .Content__div-62 { top: 210rem; width: 1000px; }
 
