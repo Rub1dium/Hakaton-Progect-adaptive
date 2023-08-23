@@ -195,15 +195,14 @@ section, .Content__section-second {
 .Content__div-25 { top: 335rem; left: 30rem; width: 450px; }
 .Content__div-26 { top: 398rem; left: 35rem; width: 400px; }
 
-.Content__div-27 { top: 420rem; left: 20rem; width: 1000px;}
-.Content__div-27 #diver { margin-top: 20px; }
+.Content__div-27 { top: 420rem; left: 30rem; width: 650px; }
+.Content__images-27-diver { margin-top: 20px; }
 
-.Content__div-27 span:first-child {
-    font-size: 24px;
-    line-height: 38px;
+.Content__div-27 .Content__description:first-of-type {
+    margin-bottom: 10px;
 }
 
-.Content__div-27 #description {
+.Content__images-27-diver {
     display: flex;
     gap: 15px;
 }
@@ -251,8 +250,8 @@ section, .Content__section-second {
 .Content__div-62 span:first-of-type {
     font-size: 22px;
 }
-.Content__div-62 #infoTitanic {
-    margin-top: 2rem;
+.Content__div-62 .infoTitanic {
+    margin-top: 1rem;
 
     text-align: center;
 }
@@ -271,7 +270,7 @@ section, .Content__section-second {
 .Content__image-18 { width: 250px; }
 .Content__image-23 { width: 250px; }
 .Content__image-25 { width: 600px; }
-.Content__image-27 span img { width: 300px; }
+.Content__images-27-diver .diver-image { width: 300px; }
 .Content__image-31 { width: 350px; }
 .Content__image-35 { width: 300px; }
 .Content__image-36 { width: 300px; }
