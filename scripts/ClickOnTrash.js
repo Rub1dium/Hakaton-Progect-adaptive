@@ -1,4 +1,3 @@
-
 Trash__itemTrash.forEach((item) => {
     item.addEventListener("click", () => {
         KarmaCounter.textContent = "Счетчик кармы +" + (KarmaNum += 1);

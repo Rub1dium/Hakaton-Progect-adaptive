@@ -10,8 +10,6 @@ function RandoMizer() {
 
     $(".Trash__item-trash").appendTo($(".Trash__item-trash").parent());
 
-    RandNum = 12;
-
     if (RandNum == 3) {
         Trash__itemTrash1.style.opacity = .2;
         Trash__itemTrash1.style.animationIterationCount = 1;
@@ -88,16 +86,18 @@ window.addEventListener('scroll', () => {
 
     /* Появление "кармы" && исчезновение "кармы" */
     if (metres > 35) {
+        KarmaBlock.style.visibility = "visible";
         KarmaCounter.style.opacity = 1;
     } else {
+        KarmaBlock.style.visibility = "hidden";
         KarmaCounter.style.opacity = 0;
     }
 
     /* Появление мусора && Скрыть мусор */
-    if (metres > 150 && start == false) {
+    if (metres > 35 && start == false) {
         timerID = setInterval(RandoMizer, 7000);
         start = true;
-    } else if ((metres < 150 || metres > 3825) && start == true) {
+    } else if ((metres < 35 || metres > 3825) && start == true) {
         for (let item of Trash__itemTrash) {
             item.style.animationIterationCount = 1;
             item.style.opacity = 0
