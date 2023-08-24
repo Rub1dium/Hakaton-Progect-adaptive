@@ -8,6 +8,7 @@ function RandoMizer() {
         item.style.cursor = "pointer";
     }
 
+
     $(".Trash__item-trash").appendTo($(".Trash__item-trash").parent());
 
     if (RandNum == 3) {

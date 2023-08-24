@@ -4,5 +4,7 @@ Trash__itemTrash.forEach((item) => {
         item.style.opacity = 0;
         item.style.pointerEvents = "none";
         item.style.cursor = "alias";
+
+        ClickSound.play();
     });
 })

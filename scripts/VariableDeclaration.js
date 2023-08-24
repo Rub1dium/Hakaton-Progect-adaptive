@@ -24,3 +24,5 @@ let Content__indicatorText = document.querySelector('.Content__indicator');
 const KarmaBlock = document.querySelector('.Karma-counter');
 let KarmaCounter = document.querySelector('.Karma-counter__karma-counter');
 let KarmaNum = 0;
+
+let ClickSound = document.querySelector('.Click');
