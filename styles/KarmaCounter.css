@@ -1,0 +1,23 @@
+.Karma-counter {
+    width: 250px;
+    height: 30px;
+
+    background-color: #333333;
+    border-radius: 0 0 12px 12px;
+    opacity: 0;
+
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #fff;
+
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .3s ease;
+}

@@ -10,6 +10,10 @@
 }
 
 /* Стили для индикатора глубины */
+main {
+    z-index: 5;
+}
+
 .Content {
     width: 100vw;
     height: 76800px;
@@ -57,6 +61,8 @@ section, .Content__section-first {
     height: 14500px;
 
     position: absolute;
+
+    z-index: 2;
 
     font-size: 16px;
     font-family: "Oswald", sans-serif;

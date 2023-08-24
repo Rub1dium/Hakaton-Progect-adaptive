@@ -10,20 +10,24 @@
     align-items: baseline;
 
     pointer-events: none;
+    z-index: 4;
+
 }
 
 /* Стили мусора */
 .Trash__item-trash {
     width: 300px;
     animation: TrashAnim 7s 0 linear;
-}
 
-.Trash__item-trash {
     transition: .3s ease;
     opacity: 0;
 
+    pointer-events: all;
+    user-select: none;
+
     transform: translateY(-25rem);
 }
+
 
 /* Анимация мусора  */
 @keyframes TrashAnim {
