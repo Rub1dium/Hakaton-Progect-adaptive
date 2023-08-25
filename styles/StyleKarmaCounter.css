@@ -48,7 +48,7 @@
 
     opacity: 0;
     
-    z-index: 14;
+    z-index: 14;  
     position: absolute;
 
     transition: all .3s ease;
