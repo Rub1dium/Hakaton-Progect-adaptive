@@ -1,5 +1,5 @@
 const html = document.querySelector('html');
-html.style.overflow = "hidden";
+html.style.overflowY = "hidden";
 
 const Block_blocker = document.querySelector('.Blocker');
 const Blocker__button = document.querySelector('.Blocker__button');
