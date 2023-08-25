@@ -1,26 +1,32 @@
-const Trash__itemTrash = document.querySelectorAll('.Trash__item-trash');
+const html = document.querySelector('html');
+html.style.overflow = "hidden";
 
-var metres;
-let start = false;
-let timerID1;
-let timerID2;
+const Block_blocker = document.querySelector('.Blocker');
+const Blocker__button = document.querySelector('.Blocker__button');
 
-let Wave__item = document.querySelectorAll('.Wave__item');
-let Wavebubls = document.querySelector('.Wave-bubls');
-let Bubl__image = document.querySelectorAll('.Bubl__image');
+const Wave__item = document.querySelectorAll('.Wave__item');
+const Wavebubls = document.querySelector('.Wave-bubls');
+const Bubl__image = document.querySelectorAll('.Bubl__image');
 
+const KarmaBlock = document.querySelector('.Karma-block');
+let KarmaCounter = document.querySelector('.Karma-block__karma-counter');
+var KarmaNum = 0;
 
 let Content__indicator = document.querySelector(".Content__indicator").classList;
 let Content__indicatorText = document.querySelector('.Content__indicator');
 
-const KarmaBlock = document.querySelector('.Karma-counter');
-let KarmaCounter = document.querySelector('.Karma-counter__karma-counter');
-var KarmaNum = 0;
-
+const Trash__itemTrash = document.querySelectorAll('.Trash__item-trash');
 
 let ClickSound = document.querySelector('.ClickSound');
 let AchievementSound = document.querySelector('.AchievementSound');
+
 let Achievement = document.querySelector('.Container__achievements');
+let EasterEgg = document.querySelector('.EasterEgg');
+
+var metres;
+let timerID1;
+let timerID2;
+let start = false;
 
 let CheckAMetres1 = false;
 let CheckAMetres2 = false;
@@ -28,9 +34,13 @@ let CheckAMetres3 = false;
 let CheckAMetres4 = false;
 let CheckAMetres5 = false;
 
-let EasterEgg = document.querySelector('.EasterEgg');
 let CheckAEasterEgg = false;
 
 
-let Menu__href2 = document.querySelector('.Menu__href-2');
-let CheckADocumention = false;
+
+
+
+
+
+
+

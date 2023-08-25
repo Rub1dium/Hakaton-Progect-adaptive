@@ -1,4 +1,4 @@
-.Karma-counter {
+.Karma-block {
     width: 250px;
     height: 170px;
 
@@ -15,7 +15,7 @@
     transition: all .3s ease;
 }
 
-.Karma-counter__karma-counter {
+.Karma-block__karma-counter {
     width: 250px;
     height: 30px;
 
@@ -34,7 +34,7 @@
     transition: all .3s ease;
 }
 
-.Karma-counter__about {
+.Karma-block__about {
     width: 250px;
     height: 120px;
 
@@ -50,7 +50,7 @@
     transition: all .3s ease;
 }
 
-.Karma-counter:hover .Karma-counter__about {
+.Karma-blockr:hover .Karma-block__about {
     opacity: 1;
     transform: translateY(50px);
 }

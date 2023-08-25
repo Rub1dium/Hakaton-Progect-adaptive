@@ -64,7 +64,7 @@ window.addEventListener("scroll", () => {
     }
 
     else if (metres > 3800 && CheckAMetres5 == false) {
-        CheckAMetres5  = true
+        CheckAMetres5 = true
         SetText("«The End?» - Долистайте до конца сайта");
         HiddeAchievement();
     }
@@ -74,7 +74,7 @@ EasterEgg.addEventListener("mouseover", () => {
     if (CheckAEasterEgg) {
 
     } else {
-        SetText("«Охотник за яйцами» - Насти пасхалку");
+        SetText("«Охотник за яйцами» - Найти пасхалку");
         HiddeAchievement();
     }
 });
