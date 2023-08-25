@@ -10,6 +10,8 @@ function RandoMizer() {
 
     $(".Trash__item-trash").appendTo($(".Trash__item-trash").parent());
 
+    RandNum = 6;
+
     if (RandNum == 3) {
         Trash__itemTrash[0].style.opacity = .2;
         Trash__itemTrash[0].style.animationIterationCount = 1;
@@ -35,7 +37,7 @@ function RandoMizer() {
 
 /* Прослушка скролла */
 window.addEventListener('scroll', () => {
-    let metres = Math.round((window.scrollY - 460) / 20);
+    metres = Math.round((window.scrollY - 460) / 20);
 
     /* Изменение индикатора глубны */
     if (window.scrollY > 460) {
@@ -95,7 +97,7 @@ window.addEventListener('scroll', () => {
 
     /* Появление мусора && Скрыть мусор */
     if (metres > 35 && start == false) {
-        timerID = setInterval(RandoMizer, 7000);
+        timerID1 = setInterval(RandoMizer, 7000);
         start = true;
     } else if ((metres < 35 || metres > 3825) && start == true) {
         for (let item of Trash__itemTrash) {
@@ -103,7 +105,7 @@ window.addEventListener('scroll', () => {
             item.style.opacity = 0
         }
 
-        clearInterval(timerID);
+        clearInterval(timerID1);
         start = false;
     }
 
