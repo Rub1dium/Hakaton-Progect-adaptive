@@ -12,24 +12,24 @@ function RandoMizer() {
     $(".Trash__item-trash").appendTo($(".Trash__item-trash").parent());
 
     if (RandNum == 3) {
-        Trash__itemTrash1.style.opacity = .2;
-        Trash__itemTrash1.style.animationIterationCount = 1;
+        Trash__itemTrash[0].style.opacity = .2;
+        Trash__itemTrash[0].style.animationIterationCount = 1;
     }
     else if (RandNum == 6) {
-        Trash__itemTrash2.style.opacity = .2;
-        Trash__itemTrash2.style.animationIterationCount = 1;
+        Trash__itemTrash[1].style.opacity = .2;
+        Trash__itemTrash[1].style.animationIterationCount = 1;
     }
     else if (RandNum == 9) {
-        Trash__itemTrash3.style.opacity = .2;
-        Trash__itemTrash3.style.animationIterationCount = 1;
+        Trash__itemTrash[2].style.opacity = .2;
+        Trash__itemTrash[2].style.animationIterationCount = 1;
     }
     else if (RandNum == 12) {
-        Trash__itemTrash4.style.opacity = .2;
-        Trash__itemTrash4.style.animationIterationCount = 1;
+        Trash__itemTrash[3].style.opacity = .2;
+        Trash__itemTrash[3].style.animationIterationCount = 1;
     }
     else if (RandNum == 15) {
-        Trash__itemTrash5.style.opacity = .2;
-        Trash__itemTrash5.style.animationIterationCount = 1;
+        Trash__itemTrash[4].style.opacity = .2;
+        Trash__itemTrash[4].style.animationIterationCount = 1;
     }
 }
 
@@ -54,35 +54,35 @@ window.addEventListener('scroll', () => {
 
     /* Появление пузырьков в воде */
     if (window.scrollY > 1000) {
-        Bubl__imageFirst.style.opacity = ".4";
-        Bubl__imageSecond.style.opacity = ".4";
+        Bubl__image[0].style.opacity = ".4";
+        Bubl__image[1].style.opacity = ".4";
     } else {
-        Bubl__imageFirst.style.opacity = "0";
-        Bubl__imageSecond.style.opacity = "0";
+        Bubl__image[0].style.opacity = "0";
+        Bubl__image[1].style.opacity = "0";
     }
 
     /* Скрыть пузырьки в воде */
     if (window.scrollY > 77500) {
-        Bubl__imageFirst.style.opacity = "0";
-        Bubl__imageSecond.style.opacity = "0";
+        Bubl__image[0].style.opacity = "0";
+        Bubl__image[1].style.opacity = "0";
     } else {
-        Bubl__imageFirst.style.opacity = ".4";
-        Bubl__imageSecond.style.opacity = ".4";
+        Bubl__image[0].style.opacity = ".4";
+        Bubl__image[1].style.opacity = ".4";
     }
 
     /* Остановка анимации (предположительно для оптимизации) */
     if (window.scrollY < 1200) {
         Wavebubls.style.animationIterationCount = "infinite";
-        Wave__itemGray.style.animationIterationCount = "infinite";
-        Wave__itemBlue.style.animationIterationCount = "infinite";
-        Wave__itemWhite.style.animationIterationCount = "infinite";
-        Wave__itemWhiteOP.style.animationIterationCount = "infinite"
+        Wave__item[0].style.animationIterationCount = "infinite";
+        Wave__item[1].style.animationIterationCount = "infinite";
+        Wave__item[2].style.animationIterationCount = "infinite";
+        Wave__item[3].style.animationIterationCount = "infinite"
     } else {
         Wavebubls.style.animationIterationCount = 0;
-        Wave__itemGray.style.animationIterationCount = 0;
-        Wave__itemBlue.style.animationIterationCount = 0;
-        Wave__itemWhite.style.animationIterationCount = 0;
-        Wave__itemWhiteOP.style.animationIterationCount = 0;
+        Wave__item[0].style.animationIterationCount = 0;
+        Wave__item[1].style.animationIterationCount = 0;
+        Wave__item[2].style.animationIterationCount = 0;
+        Wave__item[3].style.animationIterationCount = 0;
     }
 
     /* Появление "кармы" && исчезновение "кармы" */

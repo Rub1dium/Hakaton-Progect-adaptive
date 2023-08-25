@@ -234,7 +234,7 @@ header {
 
 /* Стили пузырей от волн */
 
-.WaveBubls {
+.Container__wave-bubls {
     width: 100%;
     height: 400px;
 
@@ -246,7 +246,7 @@ header {
 .Wave-bubls {
     width: 6800px;
     height: 400px;
-    background: url("../img/waveBubls2.png") repeat-x;
+    background: url("../img/waveBubls.png") repeat-x;
 
     position: absolute;
     left: -20rem;
