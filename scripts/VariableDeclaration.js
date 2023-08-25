@@ -13,6 +13,12 @@ let Content__indicatorText = document.querySelector('.Content__indicator');
 
 const KarmaBlock = document.querySelector('.Karma-counter');
 let KarmaCounter = document.querySelector('.Karma-counter__karma-counter');
-let KarmaNum = 0;
+var KarmaNum = 0;
 
-let ClickSound = document.querySelector('.Click');
+
+let ClickSound = document.querySelector('.ClickSound');
+
+let AchievementSound = document.querySelector('.AchievementSound');
+
+let Achievement = document.querySelector('.Container__achievements');
+

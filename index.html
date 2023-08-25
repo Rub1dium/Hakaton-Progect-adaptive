@@ -8,14 +8,20 @@
     <link rel="shortcut icon" href="img/IconSea.png">
     <link rel="stylesheet" href="StyleIndex.css">
 
-    <audio class="Click">
-        <source src="sounds/click.mp3">
+    <audio class="ClickSound">
+        <source class="bbb" src="sounds/click.mp3">
+    </audio>
+
+    <audio class="AchievementSound">
+        <source src="sounds/Achievement.mp3">
     </audio>
 
     <title>Глубокий океан</title>
 </head>
 
 <body>
+    <div class="Container__achievements"></div>
+
     <div class="Container__wave-bubls">
         <div class="Wave-bubls"></div>
     </div>
@@ -847,6 +853,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="scripts/VariableDeclaration.js"></script>
+    
+    <script src="scripts/Achievements.js"></script>
     <script src="scripts/ScrollCheck.js"></script>
     <script src="scripts/ClickOnTrash.js"></script>
     <script src="scripts/AnimPictures.js"></script>
