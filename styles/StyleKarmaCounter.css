@@ -54,9 +54,7 @@
     transition: all .3s ease;
 }
 
-.Karma-block:hover .Karma-block__about,
-.Karma-block__karma-counter:hover .Karma-block__about,
-.Karma-block__about:hover .Karma-block__about {
+.Karma-block:hover .Karma-block__about {
     opacity: 1;
     transform: translateY(50px);
 }
