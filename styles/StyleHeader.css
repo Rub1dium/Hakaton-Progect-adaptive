@@ -105,6 +105,7 @@ header {
 
 .Menu__span:hover .Menu__div {
     display: block;
+    right: 20px;
 }
 
 

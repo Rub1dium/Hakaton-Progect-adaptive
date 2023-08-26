@@ -15,7 +15,7 @@ main {
 }
 
 .Content {
-    width: 100vw;
+    width: 100%;
     height: 76800px;
     background: url("../img/gradient.png") repeat-x;
     background-color: #000000;
@@ -27,7 +27,7 @@ main {
 }
 
 .Content__indicator {
-    width: 100vw;
+    width: 100%;
     height: 60px;
 
     border-bottom: 1px dashed #ffffff67;
@@ -56,8 +56,7 @@ main {
 
 /* Стили для секции */
 section, .Content__section-first {
-    width: 1600px;
-    width: 85%;
+    width: 100%;
     height: 14500px;
 
     position: absolute;
@@ -102,7 +101,10 @@ section, .Content__section-first {
     padding: 20px;
 
     opacity: 0;
+
     transform: translateY(-130px);
+    z-index: 5;
+
 
     color: #2c2c54;
 
@@ -112,18 +114,23 @@ section, .Content__section-first {
 .Content__div:hover .Content__description {
     margin-top: 1rem;
 
-    transform: translateY(0);
-    z-index: 2;
+    z-index: 5;
+    transform: translateY(0px);
+
     opacity: 1;
 }
 
+.Content__image {
+    z-index: 1;
+}
 
 
 /* Стили текста "СУМЕРЕЧНАЯ ЗОНА" */
 .Content__TTZ {
     position: absolute;
     top: 251rem;
-    left: 33.8rem;
+    left: 50%;
+    transform: translateX(-50%);
 
     font-size: 50px;
     font-weight: bold;
@@ -136,7 +143,8 @@ section, .Content__section-first {
 .Content__TMZ { 
     position: absolute;
     top: 348rem;
-    left: 33.4rem;
+    left: 50%;
+    transform: translateX(-50%);
 
     font-size: 50px;
     font-weight: bold;
@@ -146,9 +154,11 @@ section, .Content__section-first {
 .Sun-light {
     position: absolute;
     top: 365rem;
-    left: 37.5rem;
+    left: 50%;
+    transform: translateX(-50%);
 
     font-weight: 500;
+    text-align: center;
     color: #fff;
 }
 
@@ -173,11 +183,13 @@ section, .Content__section-first {
 .Content__div_visible { opacity: 1; } /* Стиль для появления контейнеров */
 
 .Content__div_left {
-    left: 10%;
+    left: 5%;
+    transform: translateX(-5%);
 }
 
 .Content__div_betweenLC {
     left: 23%;
+    transform: translateX(-23%);
 }
 
 .Content__div_center {
@@ -187,11 +199,12 @@ section, .Content__section-first {
 
 .Content__div_betweenRC {
     left: 60%;
+    transform: translateX(-60%);
 }
 
 .Content__div_right {
-    left: 90%;
-    transform: translateX(-90%);
+    left: 95%;
+    transform: translateX(-95%);
     justify-content: space-between;
 }
 
@@ -215,14 +228,14 @@ section, .Content__section-first {
 .Content__div-15 { top: 155rem; width: 350px; }
 .Content__div-16 { top: 170rem; }
 .Content__div-17 { top: 190rem; width: 320px; }
-.Content__div-18 { top: 205rem; width: 550px; }
+.Content__div-18 { top: 210rem; width: 550px; }
 .Content__div-19 { top: 230rem; }
 .Content__div-20 { top: 235rem; width: 350px; }
 
 .Content__div-21 { top: 265rem; width: 300px; }
 .Content__div-22 { top: 280rem; width: 350px; }
 .Content__div-23 { top: 295rem; width: 300px; }
-.Content__div-24 { top: 325rem; width: 350px; }
+.Content__div-24 { top: 320rem; width: 350px; }
 .Content__div-25 { top: 335rem; width: 450px; }
 .Content__div-26 { top: 398rem; width: 400px; }
 
@@ -321,6 +334,8 @@ section, .Content__section-first {
 /* Стили для пасхального яйца */
 .EasterEgg {
     width: auto;
+
+    z-index: 5;
 
     transform: translate(-105px, 72000px);
     opacity: 1;
