@@ -74,6 +74,7 @@ EasterEgg.addEventListener("mouseover", () => {
     if (CheckAEasterEgg) {
 
     } else {
+        CheckAEasterEgg = true
         SetText("«Охотник за яйцами» - Найти пасхалку");
         HiddeAchievement();
     }
