@@ -16,7 +16,7 @@
 
 /* Стили для шапки */
 header {
-    width: 100vw;
+    width: 100%;
     height: 1000px;
 
     background: linear-gradient(180deg, #9be4ff, 60%, #fff5d4); 
@@ -31,8 +31,8 @@ header {
 
 /* Стили гл. меню */
 .Menu {
-    width: 70vw;
-    height: 5vh;
+    width: 70%;
+    height: 65px;
 
     position: static;
     margin-top: 20px;
@@ -44,7 +44,7 @@ header {
 /* Стили лого */
 .Menu__logo {
     width: 225px;
-    height: 5vh;
+    height: 65px;
 
     transform: translateX(35px);
 
@@ -70,7 +70,7 @@ header {
 /* Стили ссылок гл. меню */
 .Menu__nav {
     width: 350px;
-    height: 5vh;
+    height: 65px;
 
     display: flex;
     justify-content: space-between;

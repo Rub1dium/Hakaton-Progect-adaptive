@@ -17,7 +17,7 @@ main {
 .Content {
     width: 100vw;
     height: 76800px;
-    background: url("../img/gradient.png") no-repeat;
+    background: url("../img/gradient.png") repeat-x;
     background-color: #000000;
 
     display: flex;

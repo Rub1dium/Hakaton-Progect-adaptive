@@ -1,0 +1,10 @@
+@media screen and (max-width: 1440px) {
+        .Menu__logo {
+            width: 200px;
+            height: 50px;
+        }
+
+        .Menu__image {
+            width: 60px;
+        }
+}
