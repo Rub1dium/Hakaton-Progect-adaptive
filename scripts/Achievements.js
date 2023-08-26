@@ -63,8 +63,8 @@ window.addEventListener("scroll", () => {
         HiddeAchievement();
     }
 
-    else if (metres > 3800 && CheckAMetres5 == false) {
-        CheckAMetres5 = true
+    else if (metres > 3800 && CheckAMetres6 == false) {
+        CheckAMetres6 = true
         SetText("«The End?» - Долистайте до конца сайта");
         HiddeAchievement();
     }
