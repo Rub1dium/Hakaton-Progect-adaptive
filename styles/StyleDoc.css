@@ -210,6 +210,38 @@ iframe {
     font-weight: 700;
     color: #fff;
 }
+
+
+.Section-data {
+    width: 1460px;
+    height: auto;
+
+    padding: 50px 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Section-data__text {
+    width: 1300px;
+    /* height: 400px; */
+
+    background-color: #2c6ac7;
+    border-radius: 12px;
+
+    padding: 20px;
+
+
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffffcc;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+}
+
 /* Стили гл. контейнера */
 footer {
     width: 100vw;
