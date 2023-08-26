@@ -1,4 +1,3 @@
-@import url("styles/AdaptiveIndex.css");
 @import url("styles/Achievements.css");
 
 @import url("styles/StyleBlocker.css");
@@ -8,3 +7,5 @@
 @import url("styles/StyleTrash.css");
 @import url("styles/StyleKarmaCounter.css");
 @import url("styles/StylebBubls.css");
+
+@import url("styles/AdaptiveIndex.css");
