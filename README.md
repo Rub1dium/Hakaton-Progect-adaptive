@@ -6,19 +6,6 @@
 |:-------------:|:------------------:|:------------:|:--------------:|
 | 1-e место     | Веб-разработка     | Under water  | 163/180        |
 
-
-| Html фалов - 2      | Css фалов - 10         | Js файлов - 6          | Всего строк кода |
-|:-------------------:|:----------------------:|:----------------------:|:----------------:|
-| index.html          | Achievements.css       | Achievements.js        |       2798       |
-| documentation.html  | StyleHeader.css        | AnimPictures.js        |                  |
-|                     | StyleContent.css       | Blocker.js             |                  |
-|                     | StyleFooter.css        | ClickOnTrash.js        |                  |
-|                     | StylebBubls.css        | ScrollCheck.js         |                  |
-|                     | StyleBlocker.css       | VariableDeclaration.js |                  |
-|                     | StyleKarmaCounter.css  |                        |                  |
-|                     | StyleTrash.css         |                        |                  |
-|                     | StyleDoc.css           |                        |                  |
-
 ---
 
 ## Конкурс | Ощущения | Процесс разработки | О сайте:
@@ -38,6 +25,19 @@
 
 Сайт - https://rub1dium.github.io/Hakaton-Progect/index.html
 ! На телефонах сайт лучше всего смотреть с горизонтального режима !
+
+
+| Html фалов - 2      | Css фалов - 10         | Js файлов - 6          | Всего строк кода |
+|:-------------------:|:----------------------:|:----------------------:|:----------------:|
+| index.html          | Achievements.css       | Achievements.js        |       2798       |
+| documentation.html  | StyleHeader.css        | AnimPictures.js        |                  |
+|                     | StyleContent.css       | Blocker.js             |                  |
+|                     | StyleFooter.css        | ClickOnTrash.js        |                  |
+|                     | StylebBubls.css        | ScrollCheck.js         |                  |
+|                     | StyleBlocker.css       | VariableDeclaration.js |                  |
+|                     | StyleKarmaCounter.css  |                        |                  |
+|                     | StyleTrash.css         |                        |                  |
+|                     | StyleDoc.css           |                        |                  |
 
 ---
 
