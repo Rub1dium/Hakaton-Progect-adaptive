@@ -1,3 +1,4 @@
+/* Функция для скрытия достижения через 4 секунды */
 function HiddeAchievement() {
     clearTimeout(timerID2);
     timerID2 = setTimeout(() => {
@@ -6,12 +7,14 @@ function HiddeAchievement() {
     }, 4000);
 }
 
+/* Поставить новый текст в достижения */
 function SetText(text) {
     Achievement.textContent = text + " ✅"
     Achievement.style.bottom = "0rem";
     AchievementSound.play();
 }
 
+/* Проверка достижений "Очистка океана" */
 function CheckAchievements(KarmaNum) {
     if (KarmaNum == 1) {
         SetText("Очистить океан");
@@ -32,6 +35,7 @@ function CheckAchievements(KarmaNum) {
     }
 }
 
+/* Проверка достижений "Глубина" */
 window.addEventListener("scroll", () => {
     if (metres > 100 && CheckAMetres1 == false) {
         CheckAMetres1 = true
@@ -70,6 +74,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
+/* Проверка достижения "Пасхалка" */
 EasterEgg.addEventListener("mouseover", () => {
     if (CheckAEasterEgg) {
 

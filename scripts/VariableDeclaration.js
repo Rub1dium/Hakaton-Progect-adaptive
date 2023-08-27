@@ -1,3 +1,5 @@
+/* Объявление переменных и запуск некоторых функций */
+
 const html = document.querySelector('html');
 html.style.overflowY = "hidden";
 

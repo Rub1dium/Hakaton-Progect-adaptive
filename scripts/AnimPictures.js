@@ -7,6 +7,7 @@ function onEntry(entry) {
     });
 }
 
+/* Настройки */
 let options = { threshold: [.5] };
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll('.Content__div');

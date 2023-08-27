@@ -35,6 +35,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Стили гл. меню */
 .Menu {
     width: 900px;
     height: 45px;
@@ -201,6 +202,8 @@ iframe {
     transform: translateY(30px);
 }
 
+
+/* Стили для названия текста */
 .Section__text {
     padding: 40px;
 }
