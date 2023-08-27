@@ -1,5 +1,13 @@
 const html = document.querySelector('html');
-// html.style.overflowY = "hidden";
+html.style.overflowY = "hidden";
+
+let Content__div = document.querySelectorAll('.Content__div');
+let level = 63;
+
+for (item of Content__div) {
+    item.style.zIndex = level;
+    --level;
+}
 
 const Block_blocker = document.querySelector('.Blocker');
 const Blocker__button = document.querySelector('.Blocker__button');
@@ -36,9 +44,6 @@ let CheckAMetres5 = false;
 let CheckAMetres6 = false;
 
 let CheckAEasterEgg = false;
-
-// let heightClient = document.documentElement.clientHeight;
-// console.log(heightClient);
 
 
 

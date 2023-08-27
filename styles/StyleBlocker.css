@@ -4,7 +4,7 @@
 
     background-color: #000000b7;
 
-    z-index: 15;
+    z-index: 65;
     position: fixed;
 
     transition: all .3s ease;
