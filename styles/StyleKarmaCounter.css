@@ -9,7 +9,7 @@
 
     visibility: hidden;
 
-    z-index: 63;
+    z-index: 101;
     display: flex;
     justify-content: center;
 
@@ -26,7 +26,7 @@
     border-radius: 0 0 12px 12px;
     opacity: 0;
 
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 1.2px;
     color: #fff;
