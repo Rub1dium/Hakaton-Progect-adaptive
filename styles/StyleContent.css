@@ -34,7 +34,7 @@
     z-index: 5;
 
     position: fixed;
-    bottom: 300px;
+    bottom: 250px;
 
     font-size: 24px;
     font-weight: bold;
@@ -77,11 +77,6 @@ section, .Content__section-first {
     margin-top: 72500px;
 
     display: flex;
-}
-
-/* Стили текста названия рыб */
-.Content__div .Content__name-fish {
-    margin-top: 10px;
 }
 
 

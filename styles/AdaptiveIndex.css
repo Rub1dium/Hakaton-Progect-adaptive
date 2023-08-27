@@ -1,0 +1,97 @@
+@media screen and (max-width: 1440px) {
+    .Menu__logo {
+        width: 200px;
+    }
+
+    .Menu__image {
+        width: 50px;
+    }
+
+    .Menu__text {
+        font-size: 20px;
+    }
+
+    .Menu__nav {
+        width: 335px;
+    }
+
+    .Text__TDS {
+        font-size: 85px;
+    }
+
+    .Menu__href,
+    .Menu__span {
+        font-size: 18px;
+    }
+    
+    .Content__indicator {
+        bottom: 150px;
+    }
+
+    .Content__div span:first-of-type {
+        font-size: 14px;
+    }
+
+    .Content__description {
+        font-size: 14px;
+    }
+
+    .Content__div-10 { top: 63rem;}
+    .Content__div-19 { top: 235rem; }
+    .Content__div-20 { top: 230rem; width: 350px; }
+
+
+
+    .Content__image-1  { width: 220px; }
+    .Content__image-2  { width: 190px; }
+    .Content__image-5  { width: 140px; }
+    .Content__image-6  { width: 200px; }
+    .Content__image-8  { width: 180px; }
+    .Content__image-9  { width: 200px; }
+    .Content__image-11 { width: 250px; }
+    .Content__image-13 { width: 400px; }
+    .Content__image-14 { width: 200px; }
+    .Content__image-18 { width: 250px; }
+    .Content__image-23 { width: 250px; }
+    .Content__image-25 { width: 600px; }
+    .Content__images-27-diver .diver-image { width: 300px; }
+    .Content__image-31 { width: 350px; }
+    .Content__image-35 { width: 300px; }
+    .Content__image-36 { width: 300px; }
+    .Content__image-37 { width: 350px; }
+    .Content__image-38 { width: 500px; }
+    .Content__image-39 { width: 400px; }
+    .Content__image-42 { width: 300px; }
+    .Content__image-43 { width: 300px; }
+    .Content__image-45 { width: 450px; }
+    .Content__image-46 { width: 350px; }
+    .Content__image-47 { width: 350px; }
+    .Content__image-54 { width: 750px; }
+    .Content__image-58 { width: 350px; }
+    .Content__image-61 { width: 200px; }
+
+    .Karma-block {
+        width: 260px;
+        height: 150px;
+    }
+
+    .Karma-block__karma-counter {
+        width: 260px;
+        height: 50px;
+
+        font-size: 18px;
+    }
+
+    .Container__achievements {
+        width: 320px;
+
+        font-size: 20px;
+    }
+
+    .Blocker__button {
+        width: 270px;
+        height: 120px;
+
+        font-size: 22px;
+    }
+}
