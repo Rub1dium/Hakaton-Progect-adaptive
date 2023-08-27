@@ -10,7 +10,7 @@
     align-items: baseline;
 
     pointer-events: none;
-    z-index: 4;
+    z-index: 100;
 
 }
 
@@ -24,6 +24,7 @@
 
     pointer-events: all;
     user-select: none;
+    z-index: 100;
 
     transform: translateY(-25rem);
 }
