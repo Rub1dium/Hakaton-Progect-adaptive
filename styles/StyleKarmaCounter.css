@@ -1,6 +1,6 @@
 /* Стили гл. блока */
 .Karma-block {
-    width: 250px;
+    width: 280px;
     height: 170px;
 
     position: fixed;
@@ -19,13 +19,14 @@
 
 /* Стили дочернего блока, текста*/
 .Karma-block__karma-counter {
-    width: 250px;
-    height: 30px;
+    width: 280px;
+    height: 60px;
 
     background-color: #333333;
     border-radius: 0 0 12px 12px;
     opacity: 0;
 
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 1.2px;
     color: #fff;
