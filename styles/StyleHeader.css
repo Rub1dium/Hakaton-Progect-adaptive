@@ -44,7 +44,7 @@ header {
 /* Стили лого */
 .Menu__logo {
     width: 225px;
-    height: 65px;
+    height: 100%;
 
     transform: translateX(35px);
 
@@ -70,7 +70,7 @@ header {
 /* Стили ссылок гл. меню */
 .Menu__nav {
     width: 350px;
-    height: 65px;
+    height: 100%;
 
     display: flex;
     justify-content: space-between;
@@ -177,7 +177,6 @@ header {
 
 .Wave__item {
     width: 6800px;
-    /* width: 100%; */
     height: 300px;
     position: absolute;
 

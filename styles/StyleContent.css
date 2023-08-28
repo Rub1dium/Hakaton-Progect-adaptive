@@ -1,3 +1,7 @@
+:root {
+    --widthIMG: 250px;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     background-color: #000000;
@@ -283,32 +287,67 @@ section, .Content__section-first {
 
 
 /* Стили картинок */
-.Content__image-1  { width: 250px; }
-.Content__image-2  { width: 220px; }
-.Content__image-6  { width: 200px; }
-.Content__image-8  { width: 200px; }
-.Content__image-9  { width: 200px; }
-.Content__image-11 { width: 250px; }
-.Content__image-13 { width: 400px; }
-.Content__image-14 { width: 200px; }
-.Content__image-18 { width: 250px; }
-.Content__image-23 { width: 250px; }
-.Content__image-25 { width: 600px; }
-.Content__images-27-diver .diver-image { width: 300px; }
-.Content__image-31 { width: 350px; }
-.Content__image-35 { width: 300px; }
-.Content__image-36 { width: 300px; }
-.Content__image-37 { width: 350px; }
-.Content__image-38 { width: 500px; }
-.Content__image-39 { width: 400px; }
-.Content__image-42 { width: 300px; }
-.Content__image-43 { width: 300px; }
-.Content__image-45 { width: 450px; }
-.Content__image-46 { width: 350px; }
-.Content__image-47 { width: 350px; }
-.Content__image-54 { width: 750px; }
-.Content__image-58 { width: 350px; }
-.Content__image-61 { width: 200px; }
+.Content__image-1  { width: var(--widthIMG); }
+.Content__image-2  { width: calc(var(--widthIMG) - 30px); }
+.Content__image-3  { width: calc(var(--widthIMG) - 60px); }
+.Content__image-4  { width: calc(var(--widthIMG) - 50px); }
+.Content__image-5  { width: calc(var(--widthIMG) - 30px); }
+.Content__image-6  { width: calc(var(--widthIMG) + 30px); }
+.Content__image-7  { width: calc(var(--widthIMG) - 30px); }
+.Content__image-8  { width: calc(var(--widthIMG) - 50px); }
+.Content__image-9  { width: calc(var(--widthIMG) - 50px); }
+.Content__image-10  { width: calc(var(--widthIMG) - 20px); }
+.Content__image-11 { width: calc(var(--widthIMG)); }
+.Content__image-12  { width: calc(var(--widthIMG) + 60px); }
+.Content__image-13 { width: calc(var(--widthIMG) + 70px); }
+.Content__image-14 { width: calc(var(--widthIMG) - 50px); }
+.Content__image-15 { width: calc(var(--widthIMG) - 50px); }
+.Content__image-16 { width: var(--widthIMG); }
+.Content__image-17 { width: calc(var(--widthIMG) + 70px); }
+.Content__image-18 { width: calc(var(--widthIMG)); }
+.Content__image-19 { width: calc(var(--widthIMG)); }
+.Content__image-20 { width: calc(var(--widthIMG)); }
+.Content__image-21 { width: calc(var(--widthIMG) - 100px); }
+.Content__image-22 { width: calc(var(--widthIMG)); }
+.Content__image-23 { width: calc(var(--widthIMG)); }
+.Content__image-25 { width: calc(var(--widthIMG) + 205px); }
+.Content__image-26 { width: calc(var(--widthIMG) + 70px); }
+.Content__image-27 { width: calc(var(--widthIMG) + 50px); }
+.Content__images-27-diver .diver-image { width: calc(var(--widthIMG)); }
+.Content__image-28 { width: calc(var(--widthIMG)); }
+.Content__image-29 { width: calc(var(--widthIMG) - 50px); }
+.Content__image-30 { width: calc(var(--widthIMG) + 100px); }
+.Content__image-31 { width: calc(var(--widthIMG) + 100px); }
+.Content__image-32 { width: calc(var(--widthIMG)); }
+.Content__image-33 { width: calc(var(--widthIMG)); }
+.Content__image-34 { width: calc(var(--widthIMG) - 50px); }
+.Content__image-35 { width: calc(var(--widthIMG)); }
+.Content__image-36 { width: calc(var(--widthIMG) + 50px); }
+.Content__image-37 { width: calc(var(--widthIMG) + 40px); }
+.Content__image-38 { width: calc(var(--widthIMG) + 120px); }
+.Content__image-39 { width: calc(var(--widthIMG) + 50px); }
+.Content__image-40 { width: calc(var(--widthIMG) + 120px); }
+.Content__image-41 { width: calc(var(--widthIMG) - 70px); }
+.Content__image-42 { width: calc(var(--widthIMG) - 50px); }
+.Content__image-43 { width: calc(var(--widthIMG)); }
+.Content__image-44 { width: calc(var(--widthIMG) + 70px); }
+.Content__image-45 { width: calc(var(--widthIMG) + 200px); }
+.Content__image-46 { width: calc(var(--widthIMG) + 50px); }
+.Content__image-47 { width: calc(var(--widthIMG) + 50px); }
+.Content__image-48 { width: calc(var(--widthIMG) - 70px); }
+.Content__image-49 { width: calc(var(--widthIMG) + 100px); }
+.Content__image-50 { width: calc(var(--widthIMG) + 50px); }
+.Content__image-51 { width: calc(var(--widthIMG) - 50px); }
+.Content__image-52 { width: calc(var(--widthIMG) - 90px); }
+.Content__image-53 { width: calc(var(--widthIMG) - 50px); }
+.Content__image-54 { width: calc(var(--widthIMG) + 300px); }
+.Content__image-55 { width: calc(var(--widthIMG) - 50px); }
+.Content__image-56 { width: calc(var(--widthIMG) - 50px); }
+.Content__image-57 { width: calc(var(--widthIMG) - 30px); }
+.Content__image-58 { width: calc(var(--widthIMG) + 20px); }
+.Content__image-59 { width: calc(var(--widthIMG) + 20px); }
+.Content__image-60 { width: calc(var(--widthIMG) - 20px); }
+.Content__image-61 { width: calc(var(--widthIMG)); }
 .Content__image-52 { border-radius: 6px; }
 
 /* Стили для пасхального яйца */

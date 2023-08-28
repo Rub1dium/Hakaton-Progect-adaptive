@@ -33,6 +33,11 @@ let AchievementSound = document.querySelector('.AchievementSound');
 let Achievement = document.querySelector('.Container__achievements');
 let EasterEgg = document.querySelector('.EasterEgg');
 
+let PDIndicatorSTART;
+let PDIndicatorEND;
+let PDBublsSTART;
+let PDBublsEND;
+let PDOffAnim;
 var metres;
 let timerID1;
 let timerID2;
@@ -48,7 +53,26 @@ let CheckAMetres6 = false;
 let CheckAEasterEgg = false;
 
 
+let ClientWidth = document.documentElement.clientWidth;
 
+if (ClientWidth > 1440) {
+    PDIndicatorSTART = 460;
+    PDIndicatorEND = 77160;
+
+    PDBublsSTART = 1000;
+    PDBublsEND = 77500;
+
+    PDOffAnim = 1200;
+}
+else if (ClientWidth <= 1440) {
+    PDIndicatorSTART = 765;
+    PDIndicatorEND = 77466;
+
+    PDBublsSTART = 1148;
+    PDBublsEND = 77466;
+
+    PDOffAnim = 1260;
+}
 
 
 

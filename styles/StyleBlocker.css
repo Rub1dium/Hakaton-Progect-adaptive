@@ -4,7 +4,7 @@
 
     background-color: #000000b7;
 
-    z-index: 65;
+    z-index: 70;
     position: fixed;
 
     transition: all .3s ease;
@@ -12,7 +12,7 @@
 
 
 .Blocker__button {
-    width: 290px;
+    width: 230px;
     height: 150px;
 
     background-color: #fff;
