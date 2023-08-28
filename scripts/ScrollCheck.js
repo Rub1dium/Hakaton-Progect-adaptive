@@ -10,7 +10,6 @@ function RandoMizer() {
 
     $(".Trash__item-trash").appendTo($(".Trash__item-trash").parent());
 
-
     if (RandNum == 3) {
         Trash__itemTrash[0].style.opacity = .2;
         Trash__itemTrash[0].style.animationIterationCount = 1;
