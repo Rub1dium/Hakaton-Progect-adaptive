@@ -165,7 +165,7 @@ header {
     position: absolute;
     overflow: hidden;
 
-    bottom: -50px;
+    bottom: 0;
 }
 
 .Wave__item {
@@ -232,7 +232,7 @@ header {
 
     z-index: 10;
     position: absolute;
-    bottom: -180px;
+    bottom: -200px;
     overflow: hidden;
 }
 
@@ -260,7 +260,6 @@ header {
 
 /* Переход между header и main */
 .Gradient {
-    position: relative;
     width: 100vw;
     height: 200px;
     background: linear-gradient(180deg, #fff, #3091cd);
