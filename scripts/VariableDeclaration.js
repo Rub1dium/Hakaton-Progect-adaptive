@@ -76,11 +76,11 @@ else if (ClientWidth == 768) {
     PDBublsEND = 77064;
 }
 else if (ClientWidth == 425) {
-    PDIndicatorSTART = 765;
-    PDIndicatorEND = 77064;
+    PDIndicatorSTART = 450;
+    PDIndicatorEND = 77268;
 
-    PDBublsSTART = 1140;
-    PDBublsEND = 77064;
+    PDBublsSTART = 1070;
+    PDBublsEND = 77268;
 }
 
 

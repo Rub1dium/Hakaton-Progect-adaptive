@@ -38,10 +38,10 @@ function RandoMizer() {
 /* Прослушка скролла */
 window.addEventListener('scroll', () => {
     console.log(window.scrollY);
-    metres = Math.round((scrollY - PDIndicatorSTART) / 20);
+    metres = Math.round((window.pageYOffset - PDIndicatorSTART) / 20);
 
     /* Изменение индикатора глубны */
-    if (window.scrollY > PDIndicatorSTART) {
+    if (window.pageYOffset > PDIndicatorSTART) {
         Content__indicator.add("Content__indicator_visible")
         Content__indicatorText.textContent = metres + ' МЕТРОВ ГЛУБИНА';
     } else {
@@ -50,12 +50,12 @@ window.addEventListener('scroll', () => {
     }
 
     /* Скрыть индикатор */
-    if (window.scrollY > PDIndicatorEND) {
+    if (window.pageYOffset > PDIndicatorEND) {
         Content__indicator.remove("Content__indicator_visible");
     }
 
     /* Появление пузырьков в воде */
-    if (window.scrollY > PDBublsSTART) {
+    if (window.pageYOffset > PDBublsSTART) {
         Bubl__image[0].style.opacity = ".4";
         Bubl__image[1].style.opacity = ".4";
     } else {
@@ -64,7 +64,7 @@ window.addEventListener('scroll', () => {
     }
 
     /* Скрыть пузырьки в воде */
-    if (window.scrollY > PDIndicatorEND) {
+    if (window.pageYOffset > PDIndicatorEND) {
         Bubl__image[0].style.opacity = "0";
         Bubl__image[1].style.opacity = "0";
     } else {
@@ -73,7 +73,7 @@ window.addEventListener('scroll', () => {
     }
 
     /* Остановка анимации (предположительно для оптимизации) */
-    if (window.scrollY < PDOffAnim) {
+    if (window.pageYOffset < PDOffAnim) {
         Wavebubls.style.animationIterationCount = "infinite";
         Wave__item[0].style.animationIterationCount = "infinite";
         Wave__item[1].style.animationIterationCount = "infinite";
