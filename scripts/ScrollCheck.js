@@ -88,7 +88,11 @@ window.addEventListener('scroll', () => {
     }
 
     /* Появление "кармы" && исчезновение "кармы" */
-    if (metres > 35) {
+    if (ClientWidth = 425) {
+        KarmaBlock.style.visibility = "hidden";
+        KarmaCounter.style.opacity = 0;
+    }
+    else if (metres > 35) {
         KarmaBlock.style.visibility = "visible";
         KarmaCounter.style.opacity = 1;
     } else {
@@ -97,7 +101,18 @@ window.addEventListener('scroll', () => {
     }
 
     /* Появление мусора && Скрыть мусор */
-    if (metres > 35 && start == false) {
+    if (ClientWidth == 425) {
+        for (let item of Trash__itemTrash) {
+            item.style.animationIterationCount = 0;
+            item.style.pointerEvents = "none";
+            item.style.cursor = "alias";
+            item.style.opacity = 0
+        }
+
+        clearInterval(timerID1);
+        start = false;
+    }
+    else if (metres > 35 && start == false) {
         timerID1 = setInterval(RandoMizer, 7000);
         start = true;
     } else if ((metres < 35 || metres > 3825) && start == true) {

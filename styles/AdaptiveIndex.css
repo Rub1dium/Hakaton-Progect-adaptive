@@ -206,7 +206,7 @@
 
 @media screen and (max-width: 768px) {
     :root {
-        --widthIMG: 150px;
+        --widthIMG: 160px;
     }
 
     .Menu {
@@ -232,6 +232,10 @@
 }
 
 @media screen and (max-width: 425px) {
+    :root {
+        --widthIMG: 150px;
+    }
+
     .Menu__nav {
         width: 250px;
     }
@@ -244,6 +248,44 @@
     .Text__TDS {
         font-size: 55px;
     }
+
+    section, .Content__section-first {
+        width: 100%;
+
+        flex-direction: column;
+        justify-content: baseline;
+    }
+
+    .Content__div {
+        width: 100vw;
+
+        position: relative;
+        top: 0;
+    }
+
+    .Content__description {
+        width: 95vw;
+
+        font-size: 14px;
+    }
+
+    .Content__images-27-diver {
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    .Content__image-54 {
+        width: calc(var(--widthIMG) + 200px);
+    }
+
+    .Content__div-62 { top: 220rem; width: auto; }
+    .Content__div-62 .infoTitanic {
+        margin-top: 1rem;
+    
+        font-size: 14px;
+        text-align: center;
+    }
+
 
     .Sand-transition__logo {
         font-size: 40px;

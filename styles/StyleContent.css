@@ -234,7 +234,7 @@ section, .Content__section-first {
 
 .Content__images-27-diver {
     display: flex;
-    gap: 15px;
+    gap: 15px
 }
 
 .Content__div-28 { top: 475rem; }
@@ -281,6 +281,7 @@ section, .Content__section-first {
     font-size: 22px;
 }
 .Content__div-62 .infoTitanic {
+    width: 90vw;
     margin-top: 1rem;
 
     text-align: center;
