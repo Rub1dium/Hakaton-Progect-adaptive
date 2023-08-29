@@ -1,10 +1,9 @@
 /* Объявление переменных и запуск некоторых функций */
-
 const html = document.querySelector('html');
 html.style.overflowY = "hidden";
 
 let Content__div = document.querySelectorAll('.Content__div');
-let level = 63;
+let level = Content__div.length;
 
 for (item of Content__div) {
     item.style.zIndex = level;
