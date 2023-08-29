@@ -70,7 +70,7 @@
 
 @media screen and (max-width: 1024px) {
     :root {
-        --widthIMG: 150px;
+        --widthIMG: 170px;
     }
 
     .Menu {
@@ -113,9 +113,9 @@
 
     .Karma-block__karma-counter {
         width: 200px;
-        height: 25px;
+        height: 30px;
 
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .Karma-block__about {
@@ -134,11 +134,11 @@
     }
 
     .Content__div span:first-of-type {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .Content__description {
-        font-size: 10px;
+        font-size: 12px;
 
         padding: 10px;
     }
@@ -193,22 +193,42 @@
     }
 
     .Sand-transition__by {
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .Sand-transition__href,
     .Sand-transition__span,
     .Sand-transition__anchor {
-        font-size: 14px;
+        font-size: 16px;
     }
 
 }
 
 @media screen and (max-width: 768px) {
+    :root {
+        --widthIMG: 150px;
+    }
+
     .Menu {
         height: 70px;
         flex-direction: column;
     }
+
+    .Content__TTZ {
+        font-size: 35px;
+    }
+
+    .Karma-block__karma-counter {
+        width: 200px;
+        height: 30px;
+
+        font-size: 12px;
+    }
+
+    .Content__div span:first-of-type {
+        font-size: 12px;
+    }
+
 }
 
 @media screen and (max-width: 425px) {

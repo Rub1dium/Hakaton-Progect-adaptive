@@ -61,7 +61,7 @@ if (ClientWidth > 1440) {
     PDBublsSTART = 1000;
     PDBublsEND = 77500;
 
-    PDOffAnim = 1200;
+    PDOffAnim = 2000;
 }
 else if (ClientWidth == 1440) {
     PDIndicatorSTART = 765;
@@ -79,7 +79,7 @@ else if (ClientWidth == 768) {
     PDBublsSTART = 1116;
     PDBublsEND = 77064;
 
-    PDOffAnim = 3000;
+    PDOffAnim = 2000;
 }
 else if (ClientWidth == 425) {
     PDIndicatorSTART = 765;
@@ -88,7 +88,7 @@ else if (ClientWidth == 425) {
     PDBublsSTART = 1140;
     PDBublsEND = 77064;
 
-    PDOffAnim = 3000;
+    PDOffAnim = 2000;
 }
 
 
