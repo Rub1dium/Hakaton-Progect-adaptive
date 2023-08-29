@@ -157,6 +157,7 @@ header {
 
 .Text__TDS:hover {
     top: calc(50vh - 130px);
+    transform: translateX(-50%);
 }
 
 /* Стили для волн */
