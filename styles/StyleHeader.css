@@ -44,9 +44,7 @@ header {
 /* Стили лого */
 .Menu__logo {
     width: 225px;
-    height: 100%;
-
-    transform: translateX(35px);
+    height: auto;
 
     overflow: hidden;
 
@@ -70,7 +68,7 @@ header {
 /* Стили ссылок гл. меню */
 .Menu__nav {
     width: 350px;
-    height: 100%;
+    height: auto;
 
     display: flex;
     justify-content: space-between;
