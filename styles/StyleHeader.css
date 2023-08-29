@@ -16,7 +16,7 @@
 
 /* Стили для шапки */
 header {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 
     background: linear-gradient(180deg, #9be4ff, 60%, #fff5d4); 
@@ -140,11 +140,14 @@ header {
 /* Стили гл. текста */
 .Text__TDS {
     position: absolute;
-    top: calc(50vh - 60px);
+    top: calc(50vh - 100px);
+    left: 50%;
+    transform: translateX(-50%);
 
     font-size: 96px;
     font-family: "Roboto";
     font-weight: 700;
+    text-align: center;
     color: #2c2c54;
 
     will-change: transform;

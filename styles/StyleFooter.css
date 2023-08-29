@@ -20,8 +20,8 @@ footer {
 
 /* Стили гл. контейнера для текста */
 .Sand-transition__text {
-    width: 1200px;
-    height: 400px;
+    width: 100vw;
+    height: 70vh;
 
     transform: translateY(50px);
 
@@ -86,7 +86,7 @@ footer {
 
 .Sand-transition__span:hover .Sand-transition__div {
     display: block;
-    right: 200px;
+    right: 20px;
 }
 
 
