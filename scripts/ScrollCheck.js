@@ -41,7 +41,7 @@ window.addEventListener('scroll', () => {
     metres = Math.round((window.pageYOffset - PDIndicatorSTART) / 20);
 
     /* Изменение индикатора глубны */
-    if (window.pageYOffset > PDIndicatorSTART) {
+    if (window.scrollY > PDIndicatorSTART) {
         Content__indicator.add("Content__indicator_visible")
         Content__indicatorText.textContent = metres + ' МЕТРОВ ГЛУБИНА';
     } else {
@@ -50,7 +50,7 @@ window.addEventListener('scroll', () => {
     }
 
     /* Скрыть индикатор */
-    if (window.pageYOffset > PDIndicatorEND) {
+    if (window.scrollY > PDIndicatorEND) {
         Content__indicator.remove("Content__indicator_visible");
     }
 

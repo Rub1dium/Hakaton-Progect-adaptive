@@ -262,6 +262,10 @@
         position: relative;
         top: 0;
     }
+    
+    .Content__div-11 {
+        transform: translateY(-150px);
+    }
 
     .Content__description {
         width: 95vw;
