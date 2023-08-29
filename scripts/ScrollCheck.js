@@ -8,6 +8,8 @@ function RandoMizer() {
         item.style.cursor = "pointer";
     }
 
+    console.log("check");
+
     $(".Trash__item-trash").appendTo($(".Trash__item-trash").parent());
 
     if (RandNum == 3) {
@@ -35,7 +37,7 @@ function RandoMizer() {
 
 /* Прослушка скролла */
 window.addEventListener('scroll', () => {
-    // console.log(window.scrollY);
+    console.log(window.scrollY);
     metres = Math.round((scrollY - PDIndicatorSTART) / 20);
 
     /* Изменение индикатора глубны */
@@ -100,7 +102,9 @@ window.addEventListener('scroll', () => {
         start = true;
     } else if ((metres < 35 || metres > 3825) && start == true) {
         for (let item of Trash__itemTrash) {
-            item.style.animationIterationCount = 1;
+            item.style.animationIterationCount = 0;
+            item.style.pointerEvents = "none";
+            item.style.cursor = "alias";
             item.style.opacity = 0
         }
 

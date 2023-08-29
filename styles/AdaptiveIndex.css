@@ -27,10 +27,6 @@
     .Text__TDS {
         font-size: 85px;
     }
-    
-    .Content__indicator {
-        bottom: 150px;
-    }
 
     .Content__div span:first-of-type {
         font-size: 14px;
@@ -107,8 +103,6 @@
     }
 
     .Content__indicator {
-        bottom: 100px;
-
         font-size: 18px;
     }
 
@@ -217,7 +211,7 @@
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 425px) {
     .Menu__nav {
         width: 250px;
     }

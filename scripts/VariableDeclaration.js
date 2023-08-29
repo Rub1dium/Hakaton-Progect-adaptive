@@ -63,15 +63,34 @@ if (ClientWidth > 1440) {
 
     PDOffAnim = 1200;
 }
-else if (ClientWidth <= 1440) {
+else if (ClientWidth == 1440) {
     PDIndicatorSTART = 765;
     PDIndicatorEND = 77466;
 
     PDBublsSTART = 1148;
     PDBublsEND = 77466;
 
-    PDOffAnim = 1260;
+    PDOffAnim = 2000;
 }
+else if (ClientWidth == 768) {
+    PDIndicatorSTART = 480;
+    PDIndicatorEND = 77064;
+
+    PDBublsSTART = 1116;
+    PDBublsEND = 77064;
+
+    PDOffAnim = 3000;
+}
+else if (ClientWidth == 425) {
+    PDIndicatorSTART = 765;
+    PDIndicatorEND = 77064;
+
+    PDBublsSTART = 1140;
+    PDBublsEND = 77064;
+
+    PDOffAnim = 3000;
+}
+
 
 
 
