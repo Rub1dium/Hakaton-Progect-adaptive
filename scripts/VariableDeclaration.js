@@ -36,7 +36,7 @@ let PDIndicatorSTART;
 let PDIndicatorEND;
 let PDBublsSTART;
 let PDBublsEND;
-let PDOffAnim;
+let PDOffAnim = 2000;
 var metres;
 let timerID1;
 let timerID2;
@@ -60,8 +60,6 @@ if (ClientWidth > 1440) {
 
     PDBublsSTART = 1000;
     PDBublsEND = 77500;
-
-    PDOffAnim = 2000;
 }
 else if (ClientWidth == 1440) {
     PDIndicatorSTART = 765;
@@ -69,8 +67,6 @@ else if (ClientWidth == 1440) {
 
     PDBublsSTART = 1148;
     PDBublsEND = 77466;
-
-    PDOffAnim = 2000;
 }
 else if (ClientWidth == 768) {
     PDIndicatorSTART = 480;
@@ -78,8 +74,6 @@ else if (ClientWidth == 768) {
 
     PDBublsSTART = 1116;
     PDBublsEND = 77064;
-
-    PDOffAnim = 2000;
 }
 else if (ClientWidth == 425) {
     PDIndicatorSTART = 765;
@@ -87,8 +81,6 @@ else if (ClientWidth == 425) {
 
     PDBublsSTART = 1140;
     PDBublsEND = 77064;
-
-    PDOffAnim = 2000;
 }
 
 
