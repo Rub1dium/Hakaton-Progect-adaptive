@@ -227,7 +227,7 @@ header {
 /* Стили пузырей от волн */
 
 .Container__wave-bubls {
-    width: 100%;
+    width: 100vw;
     height: 400px;
 
     z-index: 10;
@@ -247,7 +247,7 @@ header {
     will-change: transform;
 
     opacity: 1;
-    z-index: 1;
+    z-index: 10;
     animation: Wave-bubls 10s alternate;
     animation-iteration-count: infinite;
 }
@@ -260,6 +260,7 @@ header {
 
 /* Переход между header и main */
 .Gradient {
+    position: absolute;
     width: 100vw;
     height: 200px;
     background: linear-gradient(180deg, #fff, #3091cd);
