@@ -141,8 +141,6 @@ header {
 .Text__TDS {
     position: absolute;
     top: calc(50vh - 100px);
-    left: 50%;
-    transform: translateX(-50%);
 
     font-size: 96px;
     font-family: "Roboto";
@@ -157,7 +155,6 @@ header {
 
 .Text__TDS:hover {
     top: calc(50vh - 130px);
-    transform: translateX(-50%);
 }
 
 /* Стили для волн */
