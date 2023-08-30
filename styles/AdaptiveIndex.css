@@ -288,6 +288,14 @@
         font-size: 14px;
     }
 
+    .Karma-block {
+        display: none;
+    }
+
+    .Trash {
+        display: none;
+    }
+
 
     .Sand-transition__logo {
         font-size: 40px;

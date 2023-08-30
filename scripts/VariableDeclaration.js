@@ -41,6 +41,7 @@ var metres;
 let timerID1;
 let timerID2;
 let start = false;
+let scroll;
 
 let CheckAMetres1 = false;
 let CheckAMetres2 = false;
