@@ -26,16 +26,16 @@ let Content__indicatorText = document.querySelector('.Content__indicator');
 
 const Trash__itemTrash = document.querySelectorAll('.Trash__item-trash');
 
-let ClickSound = document.querySelector('.ClickSound');
-let AchievementSound = document.querySelector('.AchievementSound');
+const ClickSound = document.querySelector('.ClickSound');
+const AchievementSound = document.querySelector('.AchievementSound');
 
-let Achievement = document.querySelector('.Container__achievements');
-let EasterEgg = document.querySelector('.EasterEgg');
+const Achievement = document.querySelector('.Container__achievements');
+const EasterEgg = document.querySelector('.EasterEgg');
 
-let PDIndicatorSTART;
-let PDIndicatorEND;
-let PDBublsSTART;
-let PDBublsEND;
+let PDIndicatorSTART = 460;
+let PDIndicatorEND = 77160;
+let PDBublsSTART = 1000;
+let PDBublsEND = 77500;
 let PDOffAnim = 2000;
 var metres;
 let timerID1;
@@ -52,9 +52,9 @@ let CheckAMetres6 = false;
 let CheckAEasterEgg = false;
 
 
-let ClientWidth = document.documentElement.clientWidth;
+const ClientWidth = document.documentElement.clientWidth;
 
-if (ClientWidth > 1440) {
+if (ClientWidth != 1440) {
     PDIndicatorSTART = 460;
     PDIndicatorEND = 77160;
 
@@ -83,7 +83,10 @@ else if (ClientWidth == 425) {
     PDBublsEND = 77268;
 }
 
-
+console.log(PDIndicatorSTART);
+console.log(PDIndicatorEND);
+console.log(PDBublsSTART);
+console.log(PDBublsEND);
 
 
 

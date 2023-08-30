@@ -8,8 +8,6 @@ function RandoMizer() {
         item.style.cursor = "pointer";
     }
 
-    console.log("check");
-
     $(".Trash__item-trash").appendTo($(".Trash__item-trash").parent());
 
     if (RandNum == 3) {
@@ -37,8 +35,9 @@ function RandoMizer() {
 
 /* Прослушка скролла */
 window.addEventListener('scroll', () => {
-    console.log(window.scrollY);
-    metres = Math.round((window.pageYOffset - PDIndicatorSTART) / 20);
+    // console.log(window.scrollY);
+    console.log(document.documentElement.scrollTop);
+    metres = Math.round((document.documentElement.scrollTop - PDIndicatorSTART) / 20);
 
     /* Изменение индикатора глубны */
     if (window.scrollY > PDIndicatorSTART) {
@@ -55,7 +54,7 @@ window.addEventListener('scroll', () => {
     }
 
     /* Появление пузырьков в воде */
-    if (window.pageYOffset > PDBublsSTART) {
+    if (window.scrollY > PDBublsSTART) {
         Bubl__image[0].style.opacity = ".4";
         Bubl__image[1].style.opacity = ".4";
     } else {
@@ -64,7 +63,7 @@ window.addEventListener('scroll', () => {
     }
 
     /* Скрыть пузырьки в воде */
-    if (window.pageYOffset > PDIndicatorEND) {
+    if (window.scrollY > PDIndicatorEND) {
         Bubl__image[0].style.opacity = "0";
         Bubl__image[1].style.opacity = "0";
     } else {
@@ -73,7 +72,7 @@ window.addEventListener('scroll', () => {
     }
 
     /* Остановка анимации (предположительно для оптимизации) */
-    if (window.pageYOffset < PDOffAnim) {
+    if (window.scrollY < PDOffAnim) {
         Wavebubls.style.animationIterationCount = "infinite";
         Wave__item[0].style.animationIterationCount = "infinite";
         Wave__item[1].style.animationIterationCount = "infinite";
@@ -88,7 +87,7 @@ window.addEventListener('scroll', () => {
     }
 
     /* Появление "кармы" && исчезновение "кармы" */
-    if (ClientWidth = 425) {
+    if (ClientWidth == 425) {
         KarmaBlock.style.visibility = "hidden";
         KarmaCounter.style.opacity = 0;
     }

@@ -32,15 +32,13 @@
         font-size: 14px;
     }
 
-    .Content__description {
-        font-size: 14px;
-    }
-
     .Content__div-10 { top: 63rem;}
     .Content__div-19 { top: 235rem; }
     .Content__div-20 { top: 230rem; width: 350px; }
 
-
+    .Content__description {
+        font-size: 14px;
+    }
 
     .Karma-block {
         width: 260px;
@@ -137,6 +135,18 @@
         font-size: 14px;
     }
 
+    .Content__div-62 span:first-of-type {
+        font-size: 18px;
+    }
+
+    .Content__div-62 .infoTitanic {
+        margin-top: 1rem;
+
+        font-size: 14px;
+
+        text-align: center;
+    }
+
     .Content__description {
         font-size: 12px;
 
@@ -176,18 +186,6 @@
         width: 500px;
     }
 
-    .Content__div-62 span:first-of-type {
-        font-size: 18px;
-    }
-
-    .Content__div-62 .infoTitanic {
-        margin-top: 1rem;
-
-        font-size: 14px;
-
-        text-align: center;
-    }
-
     .Sand-transition__logo {
         font-size: 45px;
     }
@@ -214,10 +212,6 @@
         flex-direction: column;
     }
 
-    .Content__TTZ {
-        font-size: 35px;
-    }
-
     .Karma-block__karma-counter {
         width: 200px;
         height: 30px;
@@ -227,6 +221,10 @@
 
     .Content__div span:first-of-type {
         font-size: 12px;
+    }
+
+    .Content__TTZ {
+        font-size: 35px;
     }
 
 }
@@ -267,12 +265,6 @@
         transform: translateY(-150px);
     }
 
-    .Content__description {
-        width: 95vw;
-
-        font-size: 14px;
-    }
-
     .Content__images-27-diver {
         justify-content: space-around;
         gap: 0;
@@ -288,6 +280,12 @@
     
         font-size: 14px;
         text-align: center;
+    }
+
+    .Content__description {
+        width: 95vw;
+
+        font-size: 14px;
     }
 
 
