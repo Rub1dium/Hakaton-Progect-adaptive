@@ -171,3 +171,26 @@
         margin-top: 15px;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .Section__span-text {
+        font-size: 25px;
+    }
+
+    iframe {
+        width: 280px;
+        height: 150px;
+        border-radius: 6px;
+    }
+
+    .Section__by {
+        width: 280px;
+        height: 146px;
+
+        font-size: 12px;
+    }
+
+    .Section-data__text {
+        font-size: 14px;
+    }
+}
