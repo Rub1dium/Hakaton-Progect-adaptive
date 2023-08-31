@@ -167,6 +167,12 @@
         order: -1;
     }
 
+    iframe {
+        width: 90%;
+        height: 150px;
+        border-radius: 6px;
+    }
+
     .Section-data {
         margin-top: 15px;
     }
