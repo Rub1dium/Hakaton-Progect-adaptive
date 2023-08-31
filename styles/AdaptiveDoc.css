@@ -178,19 +178,21 @@
     }
 
     iframe {
-        width: 280px;
+        width: 90%;
         height: 150px;
         border-radius: 6px;
     }
 
     .Section__by {
-        width: 280px;
-        height: 146px;
-
-        font-size: 12px;
+        display: none;
     }
 
     .Section-data__text {
         font-size: 14px;
+    }
+
+    .Sand-transition__logo {
+        font-size: 30px;
+        text-align: center;
     }
 }
