@@ -156,12 +156,12 @@ main {
 
 /* Стили для одного блока */
 .Section {
-    width: 85%;
+    width: 80%;
     height: 400px;
 
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    gap: 50px;
 }
 
 /* Стили для фрейма */
@@ -204,7 +204,7 @@ iframe {
 
 /* Стили для названия текста */
 .Section__text {
-    width: 50%;
+    width: 70%;
 }
 
 .Section__span-text {
