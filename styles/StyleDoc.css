@@ -52,8 +52,6 @@ body {
     width: 225px;
     height: 45px;
 
-    transform: translateX(35px);
-
     overflow: hidden;
 
     display: flex;

@@ -135,3 +135,45 @@
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .Menu {
+        height: 70px;
+        flex-direction: column;
+    }
+
+    .Section {
+        width: 95%;
+        height: auto;
+
+        margin-top: 15px;
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    
+    .Section__span-text {
+        font-size: 30px;
+    }
+
+    .Section .Section__text {
+        text-align: center;
+    }
+
+    .Section__text {
+        width: 100%;
+    }
+
+    .Section-1 .Section__text,
+    .Section-3 .Section__text,
+    .Section-5 .Section__text,
+    .Section-7 .Section__text,
+    .Section-9 .Section__text {
+        order: -1;
+    }
+
+    .Section-data {
+        margin-top: 15px;
+    }
+}
