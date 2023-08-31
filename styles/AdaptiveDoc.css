@@ -1,23 +1,18 @@
 @media screen and (max-width: 1440px) {
-    .Menu {
-        height: 40px;
-    }
-
     .Menu__logo {
-        width: 170px;
+        width: 200px;
     }
 
     .Menu__image {
-        width: 40px;
+        width: 45px;
     }
-    
+
     .Menu__text {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .Menu__nav {
-        width: 330px;
-        height: 40px;
+        width: 335px;
     }
 
     .Menu__href,
@@ -25,49 +20,39 @@
         font-size: 16px;
     }
 
-    .Section {
-        height: 350px;
-    }
-
     iframe {
-        width: 500px;
+        width: 470px;
         height: 260px;
+        border-radius: 6px;
     }
 
     .Section__by {
-        width: 500px;
+        width: 470px;
         height: 256px;
 
         font-size: 14px;
-    }
-
-    .Section__text {
-        padding: 35px;
     }
 
     .Section__span-text {
         font-size: 45px;
     }
 
-    .Section-data {
-        padding: 40px 60px;
-    }
-
     .Section-data__text {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .Sand-transition__logo {
-        font-size: 55px;
+        font-size: 50px;
     }
 
     .Sand-transition__by {
         font-size: 14px;
     }
-
+    
     .Sand-transition__href,
     .Sand-transition__span,
     .Sand-transition__anchor {
         font-size: 16px;
     }
 }
+
