@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
 
     overflow-x: hidden;
 }

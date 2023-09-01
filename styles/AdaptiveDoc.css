@@ -167,18 +167,16 @@
         order: -1;
     }
 
-    iframe {
-        width: 90%;
-        height: 150px;
-        border-radius: 6px;
-    }
-
     .Section-data {
         margin-top: 15px;
     }
 }
 
 @media screen and (max-width: 425px) {
+    main {
+        width: 100%;
+    }
+
     .Section__span-text {
         font-size: 25px;
     }
