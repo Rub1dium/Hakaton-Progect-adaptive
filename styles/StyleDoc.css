@@ -248,35 +248,30 @@ iframe {
 /* Стили гл. контейнера */
 footer {
     width: 100%;
-    height: 60vh;
-
+    height: 55vh;
     background: linear-gradient(180deg, #f5eacb, 70%, #c7bda2);
-
-    margin-top: 30px;
 
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    overflow: hidden;
 }
 
-/* Стиль перехода */
-.Sand-transition {
-    width: 100%;
+
+/* Стили перехода */
+.Footer__sand-transition {
+    overflow: hidden;
 }
 
-.Sand-transition__sand-image {
-    width: 100%;
-    height: 50px;
-    background: url("../img/sand.png") repeat-x;
-
-    z-index: 10;
-    transform: translateY(-50px);
+.Footer__sand-transition__sand-image {
+    background-color: #ffffff;
 }
 
 /* Стили гл. контейнера для текста */
-.Sand-transition__text {
-    width: 100%;
-    height: 40vh;
+.Footer__block-text {
+    width: 100vw;
+    height: 70vh;
 
     transform: translateY(50px);
 
@@ -287,28 +282,30 @@ footer {
 }
 
 /* Стили текса */
-.Sand-transition__logo {
-    font-size: 60px;
+.Footer__logo {
     font-weight: 700;
+    font-size: 60px;
     color: #333;
+    overflow: hidden;
+
 }
 
-.Sand-transition__by {
+.Footer__by {
     font-weight: 500;
     color: #4d4d80;
 }
 
 /* Стили ссылок */
-.Sand-transition__nav {
+.Footer__nav {
     margin-top: 70px;
 
     display: flex;
     gap: 40px;
 }
 
-.Sand-transition__href,
-.Sand-transition__span,
-.Sand-transition__anchor {
+.Footer__href,
+.Footer__span,
+.Footer__anchor {
     font-size: 18px;
     color: #212121;
     text-decoration: none;
@@ -316,17 +313,17 @@ footer {
     transition: .2s ease;
 }
 
-.Sand-transition__href:hover,
-.Sand-transition__span:hover {
+.Footer__href:hover,
+.Footer__span:hover {
     color: #ff805d;
 }
 
-.Sand-transition__href-2 {
+.Footer__href-1 {
     font-weight: 600;
 }
 
 /* Стили выпадающего меню */
-.Sand-transition__div {
+.Footer__block-div {
     background-color: transparent;
     padding: 20px 0px;
 
@@ -335,13 +332,13 @@ footer {
     display: none;
 }
 
-.Sand-transition__span:hover .Sand-transition__div {
+.Footer__span:hover .Footer__block-div {
     display: block;
-    right: 50px;
+    right: 30%;
 }
 
 
-.Sand-transition__aside {
+.Footer__aside {
     background-color: #fff;
     border-left: 1px solid;
     border-right: 1px solid;
@@ -351,19 +348,23 @@ footer {
     align-items: center;
 }
 
-.Sand-transition__aside:first-of-type {
+.Footer__aside:first-of-type {
     border-top: 1px solid;
 }
 
-.Sand-transition__aside:last-of-type {
+.Footer__aside:last-of-type {
     border-bottom: 1px solid;
 }
 
-.Sand-transition__image {
+.Footer__aside__image {
     width: 32px;
     margin-right: 10px;
 }
 
-.Sand-transition__p {
+.Footer__aside__p {
     color: #212121;
+}
+
+.Footer__anchor:hover {
+    color: #ff805d;
 }
