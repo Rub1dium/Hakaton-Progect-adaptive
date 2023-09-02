@@ -186,17 +186,17 @@
         width: 500px;
     }
 
-    .Sand-transition__logo {
+    .Footer__logo {
         font-size: 45px;
     }
 
-    .Sand-transition__by {
+    .Footer__by {
         font-size: 14px;
     }
     
-    .Sand-transition__href,
-    .Sand-transition__span,
-    .Sand-transition__anchor {
+    .Footer__href,
+    .Footer__span,
+    .Footer__anchor {
         font-size: 16px;
     }
 
@@ -297,13 +297,13 @@
     }
 
 
-    .Sand-transition__logo {
+    .Footer__logo {
         font-size: 40px;
     }
 
-    .Sand-transition__href,
-    .Sand-transition__span,
-    .Sand-transition__anchor {
+    .Footer__href,
+    .Footer__span,
+    .Footer__anchor {
         font-size: 14px;
     }
 }
