@@ -35,7 +35,6 @@ function RandoMizer() {
 
 /* Прослушка скролла */
 window.addEventListener('scroll', () => {
-    // console.log(scroll);
     scroll = document.documentElement.scrollTop
     metres = Math.round((scroll - PDIndicatorSTART) / 20);
 

@@ -2,9 +2,9 @@
 Trash__itemTrash.forEach((item) => {
     item.addEventListener("click", () => {
         KarmaCounter.textContent = "Счетчик кармы +" + ++KarmaNum;
-        item.style.opacity = 0;
         item.style.pointerEvents = "none";
         item.style.cursor = "alias";
+        item.style.opacity = 0;
 
         ClickSound.play();
         CheckAchievements(KarmaNum);

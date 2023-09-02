@@ -49,7 +49,6 @@ let CheckAMetres3 = false;
 let CheckAMetres4 = false;
 let CheckAMetres5 = false;
 let CheckAMetres6 = false;
-
 let CheckAEasterEgg = false;
 
 
@@ -83,12 +82,3 @@ else if (ClientWidth == 425) {
     PDBublsSTART = 1070;
     PDBublsEND = 77268;
 }
-
-console.log(PDIndicatorSTART);
-console.log(PDIndicatorEND);
-console.log(PDBublsSTART);
-console.log(PDBublsEND);
-
-
-
-

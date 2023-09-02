@@ -24,13 +24,13 @@ function CheckAchievements(KarmaNum) {
         SetText("«Junior Cleaner» - Очистить океан от 10 мусора");
         HiddeAchievement();
     }
-    else if (KarmaNum == 25) {
-        SetText("«Middle Cleaner» - Очистить океан от 25 мусора");
+    else if (KarmaNum == 20) {
+        SetText("«Middle Cleaner» - Очистить океан от 20 мусора");
         HiddeAchievement();
     }
 
-    else if (KarmaNum == 50) {
-        SetText("«Senior Cleaner» - Очистить океан от 50 мусора");
+    else if (KarmaNum == 30) {
+        SetText("«Senior Cleaner» - Очистить океан от 30 мусора");
         HiddeAchievement();
     }
 }
@@ -76,9 +76,7 @@ window.addEventListener("scroll", () => {
 
 /* Проверка достижения "Пасхалка" */
 EasterEgg.addEventListener("mouseover", () => {
-    if (CheckAEasterEgg) {
-
-    } else {
+    if (!CheckAEasterEgg) {
         CheckAEasterEgg = true
         SetText("«Охотник за яйцами» - Найти пасхалку");
         HiddeAchievement();
