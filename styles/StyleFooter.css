@@ -13,16 +13,16 @@ footer {
 
 
 /* Стили перехода */
-.Sand-transition {
+.Footer__sand-transition {
     overflow: hidden;
 }
 
-.Sand-transition__sand-image {
+.Footer__sand-transition__sand-image {
     background-color: #000;
 }
 
 /* Стили гл. контейнера для текста */
-.Sand-transition__text {
+.Footer__block-text {
     width: 100vw;
     height: 70vh;
 
@@ -35,7 +35,7 @@ footer {
 }
 
 /* Стили текса */
-.Sand-transition__logo {
+.Footer__logo {
     font-weight: 700;
     font-size: 60px;
     color: #333;
@@ -43,24 +43,22 @@ footer {
 
 }
 
-.Sand-transition__by {
+.Footer__by {
     font-weight: 500;
     color: #4d4d80;
 }
 
 /* Стили ссылок */
-.Sand-transition__nav {
-    font-size: 26px;
-
+.Footer__nav {
     margin-top: 70px;
 
     display: flex;
     gap: 40px;
 }
 
-.Sand-transition__href,
-.Sand-transition__span,
-.Sand-transition__anchor {
+.Footer__href,
+.Footer__span,
+.Footer__anchor {
     font-size: 18px;
     color: #212121;
     text-decoration: none;
@@ -68,17 +66,17 @@ footer {
     transition: .2s ease;
 }
 
-.Sand-transition__href:hover,
-.Sand-transition__span:hover {
+.Footer__href:hover,
+.Footer__span:hover {
     color: #ff805d;
 }
 
-.Sand-transition__href-1 {
+.Footer__href-1 {
     font-weight: 600;
 }
 
 /* Стили выпадающего меню */
-.Sand-transition__div {
+.Footer__block-div {
     background-color: transparent;
     padding: 20px 0px;
 
@@ -87,13 +85,13 @@ footer {
     display: none;
 }
 
-.Sand-transition__span:hover .Sand-transition__div {
+.Footer__span:hover .Footer__block-div {
     display: block;
-    right: 20px;
+    right: 30%;
 }
 
 
-.Sand-transition__aside {
+.Footer__aside {
     background-color: #fff;
     border-left: 1px solid;
     border-right: 1px solid;
@@ -103,19 +101,25 @@ footer {
     align-items: center;
 }
 
-.Sand-transition__aside:first-of-type {
+.Footer__aside:first-of-type {
     border-top: 1px solid;
 }
 
-.Sand-transition__aside:last-of-type {
+.Footer__aside:last-of-type {
     border-bottom: 1px solid;
 }
 
-.Sand-transition__image {
+.Footer__aside__image {
     width: 32px;
     margin-right: 10px;
 }
 
-.Sand-transition__p {
+.Footer__aside__p {
     color: #212121;
+
+
+}
+
+.Footer__anchor:hover {
+    color: #ff805d;
 }
