@@ -166,7 +166,7 @@ main {
 iframe {
     width: 570px;
     height: 320px;
-    border-radius: 6px;
+    border-radius: 12px;
 }
 
 .Section__video {
